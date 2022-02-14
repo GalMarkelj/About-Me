@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;CACd;;AACD,AAAA,eAAe,CAAC;EACd,cAAc,EAAE,MAAM;CACvB;;AACD,AAAA,qBAAqB,CAAC;EACpB,eAAe,EAAE,MAAM;CACxB;;AACD,AAAA,qBAAqB,CAAC;EACpB,eAAe,EAAE,aAAa;CAC/B;;AACD,AAAA,oBAAoB,CAAC;EACnB,eAAe,EAAE,YAAY;CAC9B;;AACD,AAAA,qBAAqB,CAAC;EACpB,eAAe,EAAE,YAAY;CAC9B;;AACD,sBAAsB;AACtB,AAAA,wBAAwB,CAAC;EACvB,WAAW,EAAE,MAAM;CACpB;;AACD,AAAA,uBAAuB,CAAC;EACtB,WAAW,EAAE,UAAU;CACxB;;AACD,AAAA,qBAAqB,CAAC;EACpB,WAAW,EAAE,QAAQ;CACtB",
+    "sources": [
+        "css/style.scss",
+        "css/general/_flex.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

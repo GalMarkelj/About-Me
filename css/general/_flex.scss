@@ -1,0 +1,157 @@
+.flex--normal {
+    display: flex;
+  }
+  .flex--vertical {
+    flex-direction: column;
+  }
+  .flex--justify-center {
+    justify-content: center;
+  }
+  .flex--justify-spread {
+    justify-content: space-between;
+  }
+  .flex--justify-aside {
+    justify-content: space-around;
+  }
+  .flex--justify-evenly {
+    justify-content: space-evenly;
+  }
+  /* Flex align items */
+  .flex--align-item-center {
+    align-items: center;
+  }
+  .flex--align-item-start {
+    align-items: flex-start;
+  }
+  .flex--align-item-end {
+    align-items: flex-end;
+  }
+  
+  // Flex multi actions
+  
+  //Horizontal flex actions
+  
+  //Justify-content ~ X axes
+  @mixin flex-X-center {
+    display: flex;
+    justify-content: center;
+  }
+  @mixin flex-X-spread {
+    display: flex;
+    justify-content: space-between;
+  }
+  @mixin flex-X-aside {
+    display: flex;
+    justify-content: space-around;
+  }
+  @mixin flex-X-start {
+    display: flex;
+    justify-content: flex-start;
+  }
+  @mixin flex-X-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  //Justify-content ~ Y axes
+  @mixin flex-Y-center {
+    display: flex;
+    align-items: center;
+  }
+  @mixin flex-Y-start {
+    display: flex;
+    align-items: flex-start;
+  }
+  @mixin flex-Y-end {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  //Y and X axes
+  @mixin flex-XY-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin flex-X-center-Y-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @mixin flex-X-spread-Y-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @mixin flex-X-start-Y-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  //Vertical flex actions
+  @mixin flex-vertical {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  //Align items - X axes
+  @mixin flex-vertical-X-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  @mixin flex-vertical-X-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @mixin flex-vertical-X-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  //Justify content ~ Y axes
+  @mixin flex-vertical-Y-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @mixin flex-vertical-Y-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  @mixin flex-vertical-Y-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  //X and Y axes
+  @mixin flex-vertical-XY-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @mixin flex-vertical-XY-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  @mixin flex-vertical-X-start-Y-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  @mixin flex-vertical-X-center-Y-spread {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
