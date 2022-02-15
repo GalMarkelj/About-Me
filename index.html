@@ -7,13 +7,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <title>Gal Markelj</title>
 
 </head>
 
 <body>
-    Hello World !
+
+    <div class="height--min-100v expender">
+        <header id="header">
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav-list__item">
+                        <h1>
+                            <a href="index.html" class="header-nav-list-item__link">
+                                <!-- <span class="fa-solid fa-code" aria-hidden="true"></span> -->
+                                <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
+                                <span>Klavdij - Gal Markelj</span>
+                            </a>
+                        </h1>
+                    </li>
+                    <li class="header-nav-list__item"><a class="header-nav-list-item__link"
+                            href="projects.html">Projects</a></li>
+                    <li class="header-nav-list__item"><a class="header-nav-list-item__link"
+                            href="aboutMe.html">About</a>
+                    </li>
+                    <li class="header-nav-list__item"><a class="header-nav-list-item__link"
+                            href="contact.html">Contact</a>
+                    </li>
+                    <li class="header-nav-list__item">
+                        <a class="header-nav-list-item__link" href="linkedin.html" target="blank">
+                            <span class="fa-brands fa-linkedin" aria-hidden="ture"></span><span
+                                class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="header-nav-list__item">
+                        <a class="header-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
+                            <span class="fa-brands fa-github" aria-hidden="true"></span><span
+                                class="sr-only">Github</span>
+                        </a>
+                    </li>
+                    <li class="header-nav-list__item"><a class="header-nav-list-item__link btn--mag" href="#">Resume</a>
+                    </li>
+                    <li class="header-nav-list__item">
+                        <span class="fa-solid fa-bars" id="open-icon"></span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="mobile-navigation-dropdown" id="mobile-main-nav">
+            <div class="mobile-navigation__header">
+                <h1>
+                    <a href="index.html" class="header-nav-list-item__link">
+                        <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
+                        <span>Klavdij - Gal Markelj</span>
+                    </a>
+                </h1>
+                <span class="fa-solid fa-circle-xmark" id="close-icon"></span>
+            </div>
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link"
+                            href="projects.html">Projects</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link"
+                            href="aboutMe.html">About</a>
+                    </li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link"
+                            href="contact.html">Contact</a>
+                    </li>
+                    <li class="mobile-nav-list__item">
+                        <a class="mobile-nav-list-item__link" href="linkedin.html" target="blank">
+                            LinkedIn
+                            <span class="fa-brands fa-linkedin"></span>
+
+                        </a>
+                    </li>
+                    <li class="mobile-nav-list__item">
+                        <a class="mobile-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
+                            Github
+                            <span class="fa-brands fa-github"></span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link btn--mag" href="#">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-navigation-footer">
+                <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
+                <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
+            </div>
+        </div>
+
+        <section class="main-section">
+
+            <p class="main-section__my-name">Hi, my name is <span>Klavdij - Gal Markelj.</span></p>
+
+            <h2>Junior front-end developer.</h2>
+
+            <p>I'm a student at Erudio collage, direction of informatics.</p>
+            <p>Currently, I'm creating a website for pratice with <a
+                    href="https://frontendmasters.com/teachers/jen-kramer/" target="_blank">Frontend Masters</a>.</p>
+        </section>
+    </div>
+
+    <div class="border-line"></div>
+
+    <section class="projects-section">
+        <h2>Projects I'm proud of</h2>
+        <div class="project">
+            <div class="projects__content">
+                <h4>Latest Project</h4>
+                <h3>Wall of Wonder</h3>
+                <p class="projects-section__description">Description of the project. This should be fairly concise
+                    while
+                    also describing the key
+                    components that
+                    you developed or worked on. It can be as long as you need it to be but should at least be a few
+                    sentences long. Be sure to include specific links anywhere in the description. A link looks like
+                    <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look
+                    <a href="#">like this</a> and <a href="#">like this</a>.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul class="projects-section__technologies-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SVG</li>
+                </ul>
+            </div>
+            <img class="projects__image" src="/images/project-ApplicationForm.JPG"
+                alt="Screenshot of the Wall of Wonder." />
+        </div>
+
+        <div class="project-opposite">
+            <div class="projects__content">
+                <h4>Latest Project</h4>
+                <h3>Wall of Wonder</h3>
+                <p class="projects-section__description">Description of the project. This should be fairly concise
+                    while
+                    also describing the key
+                    components that
+                    you developed or worked on. It can be as long as you need it to be but should at least be a few
+                    sentences long. Be sure to include specific links anywhere in the description. A link looks like
+                    <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look
+                    <a href="#">like this</a> and <a href="#">like this</a>.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul class="projects-section__technologies-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SVG</li>
+                </ul>
+            </div>
+            <img class="projects__image" src="./images/project-KGM ~Parts.JPG"
+                alt="Screenshot of the Wall of Wonder." />
+        </div>
+
+        <div class="project">
+            <div class="projects__content">
+                <h4>Latest Project</h4>
+                <h3>Wall of Wonder</h3>
+                <p class="projects-section__description">Description of the project. This should be fairly concise
+                    while
+                    also describing the key
+                    components that
+                    you developed or worked on. It can be as long as you need it to be but should at least be a few
+                    sentences long. Be sure to include specific links anywhere in the description. A link looks like
+                    <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look
+                    <a href="#">like this</a> and <a href="#">like this</a>.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul class="projects-section__technologies-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SVG</li>
+                </ul>
+            </div>
+            <img class="projects__image" src="./images/project-BeautyGlow.JPG"
+                alt="Screenshot of the Wall of Wonder." />
+        </div>
+    </section>
+
+    <div class="border-line"></div>
+
+    <section class="contact-me-section">
+        <div class="contact-me-section__box">
+            <h2>Contact me</h2>
+            <p>
+                I'm always interested in getting to know more people or help them.
+            </p>
+            <p><a href="mailto:jen@example.com" class="btn--mag">Email me</a></p>
+        </div>
+    </section>
+
+    <div class="border-line"></div>
+
+    <footer id="footer">
+        <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
+        <ul class="footer__list">
+            <li class="footer-list__item">
+                <a href="https://www.linkedin.com/in/jen4web" class="footer-list-item__link" target="blank">
+                    <span class="fab fa-linkedin" aria-hidden="true"></span>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </li>
+            <li class="footer-list__item">
+                <a href="https://www.github.com/jen4web" class="footer-list-item__link" target="blank">
+                    <span class="fab fa-github-square" aria-hidden="true"></span>
+                    <span class="sr-only">Github</span>
+                </a>
+            </li>
+            <li class="footer-list__item">
+                <a href="mailto:jen@example.com">
+                    <span class="fas fa-envelope" class="footer-list-item__link" aria-hidden="true"></span>
+                    <span class="sr-only">Email</span>
+                </a>
+            </li>
+        </ul>
+        <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
+    </footer>
+
+    <script src="./js/mobile-navigation-dropdown.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,12 @@
+.contact-me-section {
+    background-color: $plum;
+}
+.contact-me-section__box {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 0;
+}
+.contact-me-section__box p:last-child {
+    margin-top: 3rem;
+}

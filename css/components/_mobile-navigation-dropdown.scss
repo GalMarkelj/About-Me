@@ -1,0 +1,65 @@
+.mobile-navigation-dropdown {
+    z-index: 999;
+    background-color: $black;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    bottom: 100%;
+    transition: .6s ease-in-out;
+    padding-top: 1rem;
+}
+.mobile-navigation__header {
+    @include padding-around;
+    @include flex-XY-center;
+}
+.mobile-navigation__header h1 [class *= "fa-"] {
+    font-size: 100%;
+    color: $aqua;
+    @media (max-width: 500px) {
+        font-size: 90%;
+    }
+}
+.mobile-navigation__header h1 {
+    font-family: $font-sans;
+    margin-right: auto;
+
+    @media (max-width: 500px) {
+        font-size: 1.1rem;
+    }
+}
+.mobile-nav__list {
+    display: list-item;
+    list-style-type: none;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.mobile-nav-list__item {
+    padding-bottom: 1.4rem;
+}
+.mobile-nav-list-item__link {
+    color: $white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.mobile-navigation-footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+.mobile-navigation-footer h2 {
+    font-size: 80%;
+}
+.mobile-navigation-footer p {
+    font-size: 70%;
+}
+#close-icon:hover {
+    color: $hotmag;
+}
+.mobile-nav-list-item__link [class*="fa-"] {
+    color: $aqua;
+    font-size: 130%;
+}
+.mobile-navigation__header [class*="fa-"]:hover {
+    color: $hotmag;
+}
