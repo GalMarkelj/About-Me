@@ -1,2 +1,64 @@
 //general files
 @import './general/flex';
+@import './general/dimensions';
+
+//variables
+@import './components/variables';
+
+//mixins
+@import './components/mixins';
+
+//buttons
+@import './components/btn';
+
+//components
+@import './components/header';
+@import './components/footer';
+@import './components/border';
+@import './components/mobile-navigation-dropdown';
+
+//main page
+@import './components/main-page/main-section';
+@import './components/main-page/projects-section';
+@import './components/main-page/contact-me-section';
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/* generic styles for the page */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: $font-sans;
+    background-color: $black;
+    color: $white;
+    font-size: $font-m;
+}
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+a {
+    color: $magenta;
+}
+a:hover {
+    color: $hotmag;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @include flex-XY-center;
+    flex-flow: row wrap;
+}
+img {
+    width: 100%;
+}
