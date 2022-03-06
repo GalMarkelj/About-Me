@@ -16,11 +16,17 @@
 @import './components/footer';
 @import './components/border';
 @import './components/mobile-navigation-dropdown';
+@import './components/page-title';
+@import './components/predefined-classes';
 
 //main page
 @import './components/main-page/main-section';
 @import './components/main-page/projects-section';
 @import './components/main-page/contact-me-section';
+
+//projects page
+@import './components/projects-page/projects';
+
 
 html {
     box-sizing: border-box;

@@ -114,6 +114,8 @@
 .btn, .btn--mag {
   padding: .5rem;
   border-radius: 5px;
+  border: 0;
+  background-color: blue;
 }
 
 .btn--mag {
@@ -253,6 +255,10 @@
   background: linear-gradient(90deg, #ff17e4 0%, #86fbfb);
 }
 
+.bottom-border {
+  border-bottom: 2px solid #0d314b;
+}
+
 .mobile-navigation-dropdown {
   z-index: 999;
   background-color: #171321;
@@ -284,24 +290,24 @@
   }
 }
 
-.mobile-navigation__header h1 [class*="fa-"] {
+.mobile-navigation__header h2 [class*="fa-"] {
   font-size: 100%;
   color: #86fbfb;
 }
 
 @media (max-width: 500px) {
-  .mobile-navigation__header h1 [class*="fa-"] {
+  .mobile-navigation__header h2 [class*="fa-"] {
     font-size: 90%;
   }
 }
 
-.mobile-navigation__header h1 {
+.mobile-navigation__header h2 {
   font-family: "Oxygen", sans-serif;
   margin-right: auto;
 }
 
 @media (max-width: 500px) {
-  .mobile-navigation__header h1 {
+  .mobile-navigation__header h2 {
     font-size: 1.1rem;
   }
 }
@@ -349,6 +355,17 @@
 
 .mobile-navigation__header [class*="fa-"]:hover {
   color: #ff17e4;
+}
+
+.page-title {
+  margin-top: 4rem;
+  font-family: "Oxygen mono", monospace;
+}
+
+.max-width-middle {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-section {
@@ -620,6 +637,74 @@
 
 .contact-me-section__box p:last-child {
   margin-top: 3rem;
+}
+
+#projects {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #0d314b;
+}
+
+.project-review h2 {
+  font-size: 1.4rem;
+  font-family: "Oxygen", sans-serif;
+}
+
+.project-review__visual {
+  margin: 2rem auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+      grid-template-areas: "logo main main" "mobile main main" "mobile program program" "mobile program program";
+}
+
+.visual__item {
+  position: relative;
+}
+
+.visual__item span {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: .5rem;
+}
+
+.visual__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.visual__item--1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.visual__item--2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: mobile;
+}
+
+.visual__item--3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+}
+
+.visual__item--4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: program;
 }
 
 html {
