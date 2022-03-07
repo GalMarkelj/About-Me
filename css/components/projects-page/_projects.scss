@@ -1,7 +1,6 @@
 #projects {
     margin-top: 3rem;
     width: 100%;
-    background-color: $dkblue;
 }
 .project-review h2 {
     font-size: 1.4rem;
@@ -50,4 +49,37 @@
 }
 .visual__item--4 {
     grid-area: program;
+}
+
+// btns
+.project-review__box {
+    position: relative;
+}
+.project__btns {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 50%;
+    left: 0;
+
+    & span {
+        font-size: 3rem;
+        color: rgba(134, 251, 251, 1);
+        transition: 150ms ease-in-out;
+
+        &:hover {
+            color: rgba(255, 23, 228, 1);
+            transform: scale(1.1);
+        }
+        &:active {
+            color: rgb(183, 0, 255);
+        }
+    }
+}
+#project__back-btn {
+    margin-left: -90px;
+}
+#project__next-btn {
+    margin-right: -90px;
 }
