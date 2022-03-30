@@ -45,13 +45,13 @@
                 <li class="header-nav-list__item"><a class="header-nav-list-item__link btn--mag" href="#">Resume</a>
                 </li>
                 <li class="header-nav-list__item">
-                    <span class="fa-solid fa-bars" id="open-icon"></span>
+                    <span class="fa-solid fa-bars js--click" id="open-icon" data-action="toggleNavigation"></span>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div class="mobile-navigation-dropdown" id="mobile-main-nav">
+    <div class="mobile-navigation-dropdown">
         <div class="mobile-navigation__header">
             <h2>
                 <a href="index.html" class="header-nav-list-item__link">
@@ -59,7 +59,7 @@
                     <span>Klavdij - Gal Markelj</span>
                 </a>
             </h2>
-            <span class="fa-solid fa-circle-xmark" id="close-icon"></span>
+            <span class="fa-solid fa-circle-xmark js--click" id="close-icon" data-action="toggleNavigation"></span>
         </div>
         <nav class="mobile-navigation">
             <ul class="mobile-nav__list">
@@ -175,7 +175,7 @@
         <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
     </footer>
 
-    <script src="/js/mobile-navigation-dropdown.js"></script>
+    <script src="/js/handleClicks.js"></script>
 </body>
 
 </html>

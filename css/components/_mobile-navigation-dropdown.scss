@@ -7,6 +7,8 @@
     bottom: 100%;
     transition: .6s ease-in-out;
     padding-top: 1rem;
+
+    &.active--navigation { bottom: 0 !important; }
 }
 .mobile-navigation__header {
     @include padding-around;
