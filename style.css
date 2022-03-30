@@ -271,6 +271,10 @@
   padding-top: 1rem;
 }
 
+.mobile-navigation-dropdown.active--navigation {
+  bottom: 0 !important;
+}
+
 .mobile-navigation__header {
   display: -webkit-box;
   display: -ms-flexbox;
