@@ -1,97 +1,108 @@
 #projects {
-    margin-top: 3rem;
-    width: 100%;
-}
-
-.project-review h2 {
-    font-size: 1.4rem;
-    font-family: $font-sans;
+  margin-top: 3rem;
+  width: 100%;
 }
 
 .project {
-    margin: 2rem auto;
-    display: none;
-    gap: 1.5rem;
-    grid-template-areas:
-        "logo main main"
-        "mobile main main"
-        "mobile program program"
-        "mobile program program"
-        "description description description"
-    ;
+  margin: 2rem auto;
+  display: none;
+  gap: 1.5rem;
+  grid-template-areas: "logo main main"
+    "mobile main main"
+    "mobile program program"
+    "mobile program program"
+    "description description description"
+  ;
 
-    &.active--project {
-        display: grid;
-    }
-}
+  &.active--project { display: grid }
 
-.project__item {
-    position: relative;
+  &-review h2 {
+    font-size: 1.4rem;
+    font-family: $font-sans;
+  }
 
+  &__item {
     & span {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, .7);
-        padding: .5rem;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, .7);
+      padding: .5rem;
+      font-family: $font-mono;
     }
 
     & img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-}
 
-.project__item--1 {
-    grid-area: logo;
-}
+    &--1 { grid-area: logo; }
+    &--2 { grid-area: mobile; }
+    &--3 { grid-area: main; }
+    &--4 { grid-area: program; }
+  }
 
-.project__item--2 {
-    grid-area: mobile;
-
-}
-
-.project__item--3 {
-    grid-area: main;
-}
-
-.project__item--4 {
-    grid-area: program;
-}
-
-// btns
-
-.project__btns {
-    width: 100%;
+  &__btns {
+    margin-left: auto;
     bottom: 50%;
-    left: 0;
+    cursor: pointer;
 
     & span {
-        font-size: 3rem;
-        color: rgba(134, 251, 251, 1);
-        transition: 150ms ease-in-out;
+      font-size: 3rem;
+      color: rgba(134, 251, 251, 1);
+      transition: 150ms ease-in-out;
+      padding: 1rem;
 
-        &:hover {
-            color: rgba(255, 23, 228, 1);
-            transform: scale(1.1);
-        }
+      &:hover {
+        color: rgba(255, 23, 228, 1);
+        transform: scale(1.1);
+      }
 
-        &:active {
-            color: rgb(183, 0, 255);
-        }
+      &:active { color: rgb(183, 0, 255); }
     }
-}
+  }
 
-#project__back-btn {
-    margin-left: -90px;
-}
-
-#project__next-btn {
-    margin-right: -90px;
-}
-
-.project__description {
+  &__description {
     grid-area: description;
+    cursor: pointer;
+    transition: padding .5s ease-in-out;
+
+    & [class*="fa-"] {
+      color: $aqua;
+      font-size: 1em;
+      margin-left: 10px;
+    }
+
+    & h4,
+    & span { pointer-events: none; }
+
+    &-wrapper { transition: opacity .3s; }
+    .project__description-btn span { transition: transform .5s ease-in-out; }
+  }
+
+  &__description.active--dropdown {
+
+    .project__description-wrapper { opacity: 1; }
+    .project__description-btn span { transform: rotate(180deg); }
+  }
+  @media (max-width: 786px) {
+    &__btns span { font-size: 2rem; }
+    &__item span {
+      display: none;
+      font-size: 15px;
+    }
+    &__item:hover span { display: block; }
+
+    &__description {
+
+      & p { font-size: 16px; }
+
+      &-wrapper {
+        position: absolute;
+        opacity: 0;
+      }
+    }
+  }
 }

@@ -2,247 +2,241 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <title>Projects</title>
+  <title>Projects</title>
 </head>
 
 <body id="projects-page">
 
-    <header id="header">
-        <nav class="header-nav">
-            <ul class="header-nav__list">
-                <li class="header-nav-list__item">
-                    <h1>
-                        <a href="index.html" class="header-nav-list-item__link">
-                            <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
-                            <span>Klavdij - Gal Markelj</span>
-                        </a>
-                    </h1>
-                </li>
-                <li class="header-nav-list__item"><a class="header-nav-list-item__link"
-                        href="projects.html">Projects</a></li>
-                <li class="header-nav-list__item"><a class="header-nav-list-item__link" href="aboutMe.html">About</a>
-                </li>
-                <li class="header-nav-list__item"><a class="header-nav-list-item__link" href="contact.html">Contact</a>
-                </li>
-                <li class="header-nav-list__item">
-                    <a class="header-nav-list-item__link" href="linkedin.html" target="blank">
-                        <span class="fa-brands fa-linkedin" aria-hidden="ture"></span><span
-                            class="sr-only">LinkedIn</span>
-                    </a>
-                </li>
-                <li class="header-nav-list__item">
-                    <a class="header-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
-                        <span class="fa-brands fa-github" aria-hidden="true"></span><span class="sr-only">Github</span>
-                    </a>
-                </li>
-                <li class="header-nav-list__item"><a class="header-nav-list-item__link btn--mag" href="#">Resume</a>
-                </li>
-                <li class="header-nav-list__item">
-                    <span class="fa-solid fa-bars js--click" id="open-icon" data-action="toggleNavigation"></span>
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <header id="header">
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav-list__item">
+          <h1>
+            <a href="index.html" class="header-nav-list-item__link">
+              <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
+              <span>Klavdij - Gal Markelj</span>
+            </a>
+          </h1>
+        </li>
+        <li class="header-nav-list__item"><a class="header-nav-list-item__link" href="projects.html">Projects</a></li>
+        <li class="header-nav-list__item"><a class="header-nav-list-item__link" href="aboutMe.html">About</a>
+        </li>
+        <li class="header-nav-list__item"><a class="header-nav-list-item__link" href="contact.html">Contact</a>
+        </li>
+        <li class="header-nav-list__item">
+          <a class="header-nav-list-item__link" href="linkedin.html" target="blank">
+            <span class="fa-brands fa-linkedin" aria-hidden="ture"></span><span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li class="header-nav-list__item">
+          <a class="header-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
+            <span class="fa-brands fa-github" aria-hidden="true"></span><span class="sr-only">Github</span>
+          </a>
+        </li>
+        <li class="header-nav-list__item"><a class="header-nav-list-item__link btn--mag" href="#">Resume</a>
+        </li>
+        <li class="header-nav-list__item">
+          <span class="fa-solid fa-bars js--click" id="open-icon" data-action="toggleNavigation"></span>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="mobile-navigation-dropdown">
-        <div class="mobile-navigation__header">
-            <h2>
-                <a href="index.html" class="header-nav-list-item__link">
-                    <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
-                    <span>Klavdij - Gal Markelj</span>
-                </a>
-            </h2>
-            <span class="fa-solid fa-circle-xmark js--click" id="close-icon" data-action="toggleNavigation"></span>
-        </div>
-        <nav class="mobile-navigation">
-            <ul class="mobile-nav__list">
-                <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link"
-                        href="projects.html">Projects</a></li>
-                <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link" href="aboutMe.html">About</a>
-                </li>
-                <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link" href="contact.html">Contact</a>
-                </li>
-                <li class="mobile-nav-list__item">
-                    <a class="mobile-nav-list-item__link" href="linkedin.html" target="blank">
-                        LinkedIn
-                        <span class="fa-brands fa-linkedin"></span>
-
-                    </a>
-                </li>
-                <li class="mobile-nav-list__item">
-                    <a class="mobile-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
-                        Github
-                        <span class="fa-brands fa-github"></span>
-                    </a>
-                </li>
-                <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link btn--mag" href="#">Resume</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="mobile-navigation-footer">
-            <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
-            <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
-        </div>
+  <div class="mobile-navigation-dropdown">
+    <div class="mobile-navigation__header">
+      <h2>
+        <a href="index.html" class="header-nav-list-item__link">
+          <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
+          <span>Klavdij - Gal Markelj</span>
+        </a>
+      </h2>
+      <span class="fa-solid fa-circle-xmark js--click" id="close-icon" data-action="toggleNavigation"></span>
     </div>
+    <nav class="mobile-navigation">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link" href="projects.html">Projects</a></li>
+        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link" href="aboutMe.html">About</a>
+        </li>
+        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link" href="contact.html">Contact</a>
+        </li>
+        <li class="mobile-nav-list__item">
+          <a class="mobile-nav-list-item__link" href="linkedin.html" target="blank">
+            LinkedIn
+            <span class="fa-brands fa-linkedin"></span>
 
-    <div class="page-title bottom-border max-width-middle">
-        <h2>Projects</h2>
+          </a>
+        </li>
+        <li class="mobile-nav-list__item">
+          <a class="mobile-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
+            Github
+            <span class="fa-brands fa-github"></span>
+          </a>
+        </li>
+        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link btn--mag" href="#">Resume</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-navigation-footer">
+      <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
+      <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
     </div>
+  </div>
 
-    <section id="projects">
-        <div class="project-review max-width-middle">
-            <h3 id="project__name">Beauty-glow</h3>
+  <div class="page-title bottom-border max-width-middle">
+    <h2>Projects</h2>
+  </div>
 
-            <div class="pos--rel">
+  <section id="projects">
+    <div class="project-review max-width-middle">
 
-                <div class="project__btns pos--abs flex flex--apart">
-                    <span id="project__back-btn" class="fa-solid fa-circle-arrow-left js--click"
-                        data-action="projectSwap"></span>
-                    <span id="project__next-btn" class="fa-solid fa-circle-arrow-right js--click"
-                        data-action="projectSwap"></span>
-                </div>
-
-
-                <div class="project active--project" data-project="Beauty-glow">
-
-                    <div class="project__item project__item--1">
-                        <img src="/images/beauty-glow/logo.JPG" alt="beauty-glow-logo">
-                    </div>
-                    <div class="project__item project__item--2">
-                        <img src="/images/beauty-glow/mobile-version-main-page.JPG" alt="beauty glow mobile main page">
-                        <span>Mobile main page reviw</span>
-                    </div>
-                    <div class="project__item project__item--3">
-                        <img src="/images/beauty-glow/main-page-crop.JPG" alt="beauty-glow part of the main page">
-                        <span>Part of the main page</span>
-                    </div>
-                    <div class="project__item project__item--4">
-                        <img src="/images/beauty-glow/programs-page.JPG" alt="beauty-glow part of the programs-page">
-                        <span>Part of the programs page</span>
-                    </div>
-
-                    <div class="project__description">
-                        <div class="flex flex--middle">
-                            <h4>Project description</h4>
-                            <span class="fa-solid fa-angle-down"></span>
-                        </div>
-                        <div class="project__description-wrapper">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ut in non explicabo
-                                laboriosam nesciunt officia maiores, possimus debitis accusamus?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto fugit similique sit
-                                natus
-                                dignissimos aperiam odio necessitatibus dolorum deleniti.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="project" data-project="KGM-parts">
-
-                    <div class="project__item project__item--1">
-                        <img src="/images/KGM - Parts/logo.JPG" alt="kgm-parts logo">
-                    </div>
-                    <div class="project__item project__item--2">
-                        <img src="/images/KGM - Parts/mobile view.JPG" alt="kgm-parts mobile main page">
-                        <span>Mobile main page reviw</span>
-                    </div>
-                    <div class="project__item project__item--3">
-                        <img src="/images/KGM - Parts/part of the page.JPG" alt="kgm-parts part of the main page">
-                        <span>Part of the main page</span>
-                    </div>
-                    <div class="project__item project__item--4">
-                        <img src="/images/KGM - Parts/contact page.JPG" alt="kgm-parts part of the contact-page">
-                        <span>Contact page</span>
-                    </div>
-
-                    <div class="project__description">
-                        <div class="flex flex--middle">
-                            <h4>Project description</h4>
-                            <span class="fa-solid fa-angle-down"></span>
-                        </div>
-                        <div class="project__description-wrapper">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ut in non explicabo
-                                laboriosam nesciunt officia maiores, possimus debitis accusamus?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto fugit similique sit
-                                natus
-                                dignissimos aperiam odio necessitatibus dolorum deleniti.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="project" data-project="test">
-
-                    <div class="project__item project__item--1">
-                        <img src="/images/TEST/test1.jpg" alt="kgm-parts logo">
-                    </div>
-                    <div class="project__item project__item--2">
-                        <img src="/images/TEST/test2.jpeg" alt="kgm-parts mobile main page">
-                        <span>Mobile main page reviw</span>
-                    </div>
-                    <div class="project__item project__item--3">
-                        <img src="/images/TEST/test3.jpg" alt="kgm-parts part of the main page">
-                        <span>Part of the main page</span>
-                    </div>
-                    <div class="project__item project__item--4">
-                        <img src="/images/TEST/test4.jpg" alt="kgm-parts part of the contact-page">
-                        <span>Contact page</span>
-                    </div>
-
-                    <div class="project__description">
-                        <div class="flex flex--middle">
-                            <h4>Project description</h4>
-                            <span class="fa-solid fa-angle-down"></span>
-                        </div>
-                        <div class="project__description-wrapper">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ut in non explicabo
-                                laboriosam nesciunt officia maiores, possimus debitis accusamus?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto fugit similique sit
-                                natus
-                                dignissimos aperiam odio necessitatibus dolorum deleniti.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
+      <div class="flex flex--apart flex--middle">
+        <h3 id="project__name">Beauty - glow</h3>
+        <div class="project__btns  flex flex--apart">
+          <span id="project__back-btn" class="fa-solid fa-circle-arrow-left js--click" data-action="projectSwap"></span>
+          <span id="project__next-btn" class="fa-solid fa-circle-arrow-right js--click"
+            data-action="projectSwap"></span>
         </div>
-    </section>
+      </div>
 
-    <div class="border-line"></div>
+      <div class="project active--project" data-project="Beauty - glow">
 
-    <footer id="footer">
-        <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
-        <ul class="footer__list">
-            <li class="footer-list__item">
-                <a href="https://www.linkedin.com/in/jen4web" class="footer-list-item__link" target="blank">
-                    <span class="fab fa-linkedin" aria-hidden="true"></span>
-                    <span class="sr-only">LinkedIn</span>
-                </a>
-            </li>
-            <li class="footer-list__item">
-                <a href="https://www.github.com/jen4web" class="footer-list-item__link" target="blank">
-                    <span class="fab fa-github-square" aria-hidden="true"></span>
-                    <span class="sr-only">Github</span>
-                </a>
-            </li>
-            <li class="footer-list__item">
-                <a href="mailto:jen@example.com">
-                    <span class="fas fa-envelope" class="footer-list-item__link" aria-hidden="true"></span>
-                    <span class="sr-only">Email</span>
-                </a>
-            </li>
-        </ul>
-        <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
-    </footer>
+        <div class="project__item pos--rel project__item--1">
+          <img src="/images/beauty-glow/logo.JPG" alt="beauty-glow-logo">
+        </div>
+        <div class="project__item pos--rel project__item--2">
+          <img src="/images/beauty-glow/mobile-version-main-page.JPG" alt="beauty glow mobile main page">
+          <span>Mobile main page reviw</span>
+        </div>
+        <div class="project__item pos--rel project__item--3">
+          <img src="/images/beauty-glow/main-page-crop.JPG" alt="beauty-glow part of the main page">
+          <span>Part of the main page</span>
+        </div>
+        <div class="project__item pos--rel project__item--4">
+          <img src="/images/beauty-glow/programs-page.JPG" alt="beauty-glow part of the programs-page">
+          <span>Part of the programs page</span>
+        </div>
 
-    <script src="/js/handleClicks.js"></script>
+        <div class="project__description">
+          <div class="flex flex--middle project__description-btn js--click" data-action="dropdown">
+            <h4>Project description</h4>
+            <span class="fa-solid fa-angle-down description-btn__icon"></span>
+          </div>
+          <div class="project__description-wrapper">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ut in non explicabo
+              laboriosam nesciunt officia maiores, possimus debitis accusamus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto fugit similique sit
+              natus
+              dignissimos aperiam odio necessitatibus dolorum deleniti.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project" data-project="KGM ~ Parts">
+
+        <div class="project__item pos--rel project__item--1">
+          <img src="/images/KGM - Parts/logo.JPG" alt="kgm-parts logo">
+        </div>
+        <div class="project__item pos--rel project__item--2">
+          <img src="/images/KGM - Parts/mobile view.JPG" alt="kgm-parts mobile main page">
+          <span>Mobile main page reviw</span>
+        </div>
+        <div class="project__item pos--rel project__item--3">
+          <img src="/images/KGM - Parts/part of the page.JPG" alt="kgm-parts part of the main page">
+          <span>Part of the main page</span>
+        </div>
+        <div class="project__item pos--rel project__item--4">
+          <img src="/images/KGM - Parts/contact page.JPG" alt="kgm-parts part of the contact-page">
+          <span>Contact page</span>
+        </div>
+
+        <div class="project__description">
+          <div class="flex flex--middle project__description-btn js--click" data-action="dropdown">
+            <h4>Project description</h4>
+            <span class="fa-solid fa-angle-down"></span>
+          </div>
+          <div class="project__description-wrapper">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ut in non explicabo
+              laboriosam nesciunt officia maiores, possimus debitis accusamus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto fugit similique sit
+              natus
+              dignissimos aperiam odio necessitatibus dolorum deleniti.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project" data-project="test">
+
+        <div class="project__item pos--rel project__item--1">
+          <img src="/images/TEST/test1.jpg" alt="kgm-parts logo">
+        </div>
+        <div class="project__item pos--rel project__item--2">
+          <img src="/images/TEST/test2.jpeg" alt="kgm-parts mobile main page">
+          <span>Mobile main page reviw</span>
+        </div>
+        <div class="project__item pos--rel project__item--3">
+          <img src="/images/TEST/test3.jpg" alt="kgm-parts part of the main page">
+          <span>Part of the main page</span>
+        </div>
+        <div class="project__item pos--rel project__item--4">
+          <img src="/images/TEST/test4.jpg" alt="kgm-parts part of the contact-page">
+          <span>Contact page</span>
+        </div>
+
+        <div class="project__description">
+          <div class="flex flex--middle project__description-btn js--click" data-action="dropdown">
+            <h4>Project description</h4>
+            <span class="fa-solid fa-angle-down"></span>
+          </div>
+          <div class="project__description-wrapper">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ut in non explicabo
+              laboriosam nesciunt officia maiores, possimus debitis accusamus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto fugit similique sit
+              natus
+              dignissimos aperiam odio necessitatibus dolorum deleniti.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="border-line"></div>
+
+  <footer id="footer">
+    <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
+    <ul class="footer__list">
+      <li class="footer-list__item">
+        <a href="https://www.linkedin.com/in/jen4web" class="footer-list-item__link" target="blank">
+          <span class="fab fa-linkedin" aria-hidden="true"></span>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </li>
+      <li class="footer-list__item">
+        <a href="https://www.github.com/jen4web" class="footer-list-item__link" target="blank">
+          <span class="fab fa-github-square" aria-hidden="true"></span>
+          <span class="sr-only">Github</span>
+        </a>
+      </li>
+      <li class="footer-list__item">
+        <a href="mailto:jen@example.com">
+          <span class="fas fa-envelope" class="footer-list-item__link" aria-hidden="true"></span>
+          <span class="sr-only">Email</span>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
+  </footer>
+
+  <script src="/js/handleClicks.js"></script>
 </body>
 
 </html>
