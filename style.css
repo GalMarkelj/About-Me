@@ -655,10 +655,14 @@
 
 .project-review__visual {
   margin: 2rem auto;
-  display: -ms-grid;
-  display: grid;
+  display: none;
   gap: 1.5rem;
       grid-template-areas: "logo main main" "mobile main main" "mobile program program" "mobile program program";
+}
+
+.project-review__visual.active--project {
+  display: -ms-grid;
+  display: grid;
 }
 
 .visual__item {

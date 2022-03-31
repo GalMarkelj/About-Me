@@ -9,7 +9,7 @@
 
 .project-review__visual {
     margin: 2rem auto;
-    display: grid;
+    display: none;
     gap: 1.5rem;
     grid-template-areas: 
     "logo main main"
@@ -17,6 +17,8 @@
     "mobile program program"
     "mobile program program"
     ;
+
+    &.active--project { display: grid; }
 }
 
 .visual__item {
