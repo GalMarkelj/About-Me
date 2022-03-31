@@ -1,3 +1,7 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "css.format.newlineBetweenSelectors": false,
+    "css.format.newlineBetweenRules": false,
+    "scss.format.newlineBetweenSelectors": false,
+    "scss.format.newlineBetweenRules": false
 }
