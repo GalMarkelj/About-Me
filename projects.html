@@ -98,14 +98,19 @@
 
     <section id="projects">
         <div class="project-review max-width-middle">
-            <h2>Beauty Glow</h2>
+            <h2 id="project__name">Beauty-glow</h2>
 
             <div class="project-review__box">
+
                 <div class="project__btns">
-                    <span id="project__back-btn" class="fa-solid fa-circle-arrow-left"></span>
-                    <span id="project__next-btn" class="fa-solid fa-circle-arrow-right"></span>
+                    <span id="project__back-btn" class="fa-solid fa-circle-arrow-left js--click"
+                        data-action="projectSwap"></span>
+                    <span id="project__next-btn" class="fa-solid fa-circle-arrow-right js--click"
+                        data-action="projectSwap"></span>
                 </div>
-                <div class="project-review__visual" data-project="beauty-glow">
+
+
+                <div class="project-review__visual active--project" data-project="Beauty-glow">
 
                     <div class="visual__item visual__item--1">
                         <img src="/images/beauty-glow/logo.JPG" alt="beauty-glow-logo">
@@ -125,7 +130,7 @@
 
                 </div>
 
-                <!-- <div class="project-review__visual" data-project="kgm-parts">
+                <div class="project-review__visual" data-project="KGM-parts">
 
                     <div class="visual__item visual__item--1">
                         <img src="/images/KGM - Parts/logo.JPG" alt="kgm-parts logo">
@@ -143,7 +148,28 @@
                         <span>Contact page</span>
                     </div>
 
-                </div> -->
+                </div>
+
+                <div class="project-review__visual" data-project="test">
+
+                    <div class="visual__item visual__item--1">
+                        <img src="/images/TEST/test1.jpg" alt="kgm-parts logo">
+                    </div>
+                    <div class="visual__item visual__item--2">
+                        <img src="/images/TEST/test2.jpeg" alt="kgm-parts mobile main page">
+                        <span>Mobile main page reviw</span>
+                    </div>
+                    <div class="visual__item visual__item--3">
+                        <img src="/images/TEST/test3.jpg" alt="kgm-parts part of the main page">
+                        <span>Part of the main page</span>
+                    </div>
+                    <div class="visual__item visual__item--4">
+                        <img src="/images/TEST/test4.jpg" alt="kgm-parts part of the contact-page">
+                        <span>Contact page</span>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </section>
