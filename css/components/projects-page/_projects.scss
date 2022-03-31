@@ -2,26 +2,30 @@
     margin-top: 3rem;
     width: 100%;
 }
+
 .project-review h2 {
     font-size: 1.4rem;
     font-family: $font-sans;
 }
 
-.project-review__visual {
+.project {
     margin: 2rem auto;
     display: none;
     gap: 1.5rem;
-    grid-template-areas: 
-    "logo main main"
-    "mobile main main"
-    "mobile program program"
-    "mobile program program"
+    grid-template-areas:
+        "logo main main"
+        "mobile main main"
+        "mobile program program"
+        "mobile program program"
+        "description description description"
     ;
 
-    &.active--project { display: grid; }
+    &.active--project {
+        display: grid;
+    }
 }
 
-.visual__item {
+.project__item {
     position: relative;
 
     & span {
@@ -39,28 +43,27 @@
         object-fit: cover;
     }
 }
-.visual__item--1 {
+
+.project__item--1 {
     grid-area: logo;
 }
-.visual__item--2 {
+
+.project__item--2 {
     grid-area: mobile;
 
 }
-.visual__item--3 {
+
+.project__item--3 {
     grid-area: main;
 }
-.visual__item--4 {
+
+.project__item--4 {
     grid-area: program;
 }
 
 // btns
-.project-review__box {
-    position: relative;
-}
+
 .project__btns {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     bottom: 50%;
     left: 0;
@@ -74,14 +77,21 @@
             color: rgba(255, 23, 228, 1);
             transform: scale(1.1);
         }
+
         &:active {
             color: rgb(183, 0, 255);
         }
     }
 }
+
 #project__back-btn {
     margin-left: -90px;
 }
+
 #project__next-btn {
     margin-right: -90px;
+}
+
+.project__description {
+    grid-area: description;
 }

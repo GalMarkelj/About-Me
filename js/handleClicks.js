@@ -37,7 +37,7 @@ function toggleNavigation() {
 }
 
 function projectSwap(clickedBtn) {
-    let projects = document.querySelectorAll('.project-review__visual')
+    let projects = document.querySelectorAll('.project')
     let projectsList = []
     let index
 
