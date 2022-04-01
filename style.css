@@ -283,16 +283,23 @@
   padding-bottom: 3rem;
 }
 
-@media (max-width: 550px) {
-  #footer h2 {
-    font-size: 1.5rem;
-  }
-}
-
 .footer__list {
   gap: 3rem;
   font-size: 3rem;
   margin: 2rem 0;
+}
+
+@media (max-width: 786px) {
+  #footer h2 {
+    font-size: 1.3rem;
+  }
+  .footer__list {
+    gap: 2rem;
+    font-size: 2rem;
+  }
+  #footer .copyright {
+    font-size: 14px;
+  }
 }
 
 .border-line {
@@ -805,6 +812,12 @@ body {
 @media (max-width: 1200px) {
   body {
     padding: 0 10px;
+  }
+}
+
+@media (max-width: 786px) {
+  body {
+    font-size: 1rem;
   }
 }
 
