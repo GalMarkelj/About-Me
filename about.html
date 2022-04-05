@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <title>Projects</title>
+</head>
+
+<body id="projects-page" onload="draw();">
+
+  <header id="header">
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav-list__item">
+          <h1>
+            <a href="index.html" class="header-nav-list-item__link">
+              <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
+              <span>Klavdij - Gal Markelj</span>
+            </a>
+          </h1>
+        </li>
+        <li class="header-nav-list__item"><a class="header-nav-list-item__link" href="projects.html">Projects</a></li>
+        <li class="header-nav-list__item"><a class="header-nav-list-item__link" href="aboutMe.html">About</a>
+        </li>
+        <li class="header-nav-list__item"><a class="header-nav-list-item__link" href="contact.html">Contact</a>
+        </li>
+        <li class="header-nav-list__item">
+          <a class="header-nav-list-item__link" href="linkedin.html" target="blank">
+            <span class="fa-brands fa-linkedin" aria-hidden="ture"></span><span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li class="header-nav-list__item">
+          <a class="header-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
+            <span class="fa-brands fa-github" aria-hidden="true"></span><span class="sr-only">Github</span>
+          </a>
+        </li>
+        <li class="header-nav-list__item"><a class="header-nav-list-item__link btn--mag" href="#">Resume</a>
+        </li>
+        <li class="header-nav-list__item">
+          <span class="fa-solid fa-bars js--click" id="open-icon" data-action="toggleNavigation"></span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="mobile-navigation-dropdown">
+    <div class="mobile-navigation__header">
+      <h2>
+        <a href="index.html" class="header-nav-list-item__link">
+          <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
+          <span>Klavdij - Gal Markelj</span>
+        </a>
+      </h2>
+      <span class="fa-solid fa-circle-xmark js--click" id="close-icon" data-action="toggleNavigation"></span>
+    </div>
+    <nav class="mobile-navigation">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link" href="projects.html">Projects</a></li>
+        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link" href="aboutMe.html">About</a>
+        </li>
+        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link" href="contact.html">Contact</a>
+        </li>
+        <li class="mobile-nav-list__item">
+          <a class="mobile-nav-list-item__link" href="linkedin.html" target="blank">
+            LinkedIn
+            <span class="fa-brands fa-linkedin"></span>
+
+          </a>
+        </li>
+        <li class="mobile-nav-list__item">
+          <a class="mobile-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
+            Github
+            <span class="fa-brands fa-github"></span>
+          </a>
+        </li>
+        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link btn--mag" href="#">Resume</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-navigation-footer">
+      <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
+      <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+  </div>
+
+  <div class="border-line"></div>
+
+  <footer id="footer">
+    <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
+    <ul class="footer__list">
+      <li class="footer-list__item">
+        <a href="https://www.linkedin.com/in/jen4web" class="footer-list-item__link" target="blank">
+          <span class="fab fa-linkedin" aria-hidden="true"></span>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </li>
+      <li class="footer-list__item">
+        <a href="https://www.github.com/jen4web" class="footer-list-item__link" target="blank">
+          <span class="fab fa-github-square" aria-hidden="true"></span>
+          <span class="sr-only">Github</span>
+        </a>
+      </li>
+      <li class="footer-list__item">
+        <a href="mailto:jen@example.com">
+          <span class="fas fa-envelope" class="footer-list-item__link" aria-hidden="true"></span>
+          <span class="sr-only">Email</span>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
+  </footer>
+
+  <script src="/js/handleClicks.js"></script>
+  <script src="/js/canvas.js"></script>
+</body>
+
+</html>
