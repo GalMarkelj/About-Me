@@ -788,8 +788,232 @@
   }
 }
 
-.container {
-  height: 100vh;
+.CV {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.CV__sidebar {
+  max-width: 500px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  margin-right: 5%;
+}
+
+.CV__sidebar__primary {
+  height: 500px;
+  overflow: hidden;
+}
+
+.CV__sidebar__primary__polygon {
+  top: -16%;
+  left: -25%;
+  z-index: -2;
+  clip-path: polygon(50% 0, 100% 22%, 100% 78%, 50% 100%, 0 78%, 0 22%);
+  width: 110%;
+  height: 115%;
+  background-color: #4b0d49;
+}
+
+.CV__sidebar__primary img {
+  bottom: 4%;
+  right: 0;
+  z-index: -1;
+  clip-path: polygon(50% 0, 100% 22%, 100% 75%, 50% 100%, 0 78%, 0 25%);
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.CV__sidebar__secondary {
+  margin-top: -10%;
+}
+
+.CV__sidebar__secondary__polygon {
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  height: 250px;
+  background-color: #0d314b;
+}
+
+.CV__sidebar__secondary__content {
+  padding: 1rem 1rem 2rem;
+  background-color: #0d314b;
+}
+
+.CV__sidebar__secondary__content h4:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 10%;
+  height: 2px;
+  background-color: white;
+}
+
+.CV__sidebar__secondary__content p {
+  letter-spacing: .4px;
+  line-height: 27px;
+}
+
+.CV__sidebar__secondary__content ul {
+  display: inline-block;
+  margin: 20.8px 0;
+  width: 90%;
+}
+
+.CV__sidebar__secondary__content ul li .progress-bar {
+  width: 60%;
+  height: 10px;
+  background-color: white;
+}
+
+.CV__sidebar__secondary__content ul li .progress-bar__progress {
+  height: 100%;
+  background-color: red;
+  width: var(--load-progress);
+}
+
+.CV__sidebar__secondary__content ul li [class*="fa-"] {
+  margin-right: 10px;
+}
+
+.CV__sidebar__secondary__content ul li:nth-child(1) [class*="fa-"] {
+  font-size: 95%;
+}
+
+.CV__sidebar__secondary__content ul li:nth-child(3) [class*="fa-"] {
+  font-size: 120%;
+}
+
+.CV__sidebar__secondary__content ul li:nth-child(4) [class*="fa-"] {
+  font-size: 110%;
+}
+
+.CV__sidebar__secondary__decoration {
+  z-index: -2;
+  top: 100px;
+  clip-path: polygon(0px 25%, 100% 0px, 100% 100%, 0% 100%);
+  height: 500px;
+  width: 50%;
+  background-color: #e310cb;
+}
+
+.CV__main {
+  max-width: calc(700px - 5%);
+  width: 100%;
+}
+
+.CV__main__primary {
+  height: 380px;
+}
+
+.CV__main__primary h2 {
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.CV__main__primary h2 span {
+  display: block;
+  font-size: 2em;
+  color: #86fbfb;
+}
+
+.CV__main__primary h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.CV__main__primary .border-line {
+  margin-top: 1%;
+}
+
+.CV__main__secondary {
+  height: 100%;
+}
+
+.CV__main__secondary h4 {
+  padding: 1em;
+  border-left: 10px solid #e310cb;
+  background-color: rgba(227, 16, 203, 0.2);
+  font-size: 1.1em;
+}
+
+.CV__main__secondary__item {
+  margin-right: 5%;
+}
+
+.CV__main__secondary__item__title {
+  padding-right: 3%;
+}
+
+.CV__main__secondary__item__title h5 {
+  margin: 0;
+  margin-top: 3%;
+  font-size: 1.3rem;
+}
+
+.CV__main__secondary__item__title p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.CV__main__secondary__item__description {
+  padding-left: 3%;
+  border-left: 2px solid #0d314b;
+}
+
+.CV__main__secondary__item__description h6 {
+  margin: 0;
+  margin-top: 20.6px;
+  font-size: 1rem;
+}
+
+.CV__main__secondary__item__description p {
+  font-weight: 100;
+  letter-spacing: .4px;
+  line-height: 27px;
+}
+
+.CV__main__secondary__dropdown {
+  transition: padding .5s ease-in-out;
+}
+
+.CV__main__secondary__dropdown__btn {
+  margin-top: 3%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #86fbfb;
+  transition: color 150ms ease;
+}
+
+.CV__main__secondary__dropdown__btn:hover {
+  color: #e310cb;
+}
+
+.CV__main__secondary__dropdown__btn:active {
+  color: #ff17e4;
+}
+
+.CV__main__secondary__dropdown__btn span {
+  pointer-events: none;
+}
+
+.CV__main__secondary__dropdown__btn [class*="fa-"] {
+  margin-left: 1%;
+  transition: transform .5s ease-in-out;
+}
+
+.CV__main__secondary__dropdown__wrapper {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.CV__main__secondary__dropdown.active--dropdown .CV__main__secondary__dropdown__wrapper {
+  opacity: 1;
+}
+
+.CV__main__secondary__dropdown.active--dropdown .CV__main__secondary__dropdown__btn [class*="fa-"] {
+  transform: rotate(180deg);
 }
 
 html {

@@ -1,5 +1,6 @@
 'use strict';
 (function () {
+  console.log("handleClicks script is loading successfully !")
   document.addEventListener('click', handleClicks, false)
 
   function handleClicks(e) {
@@ -15,9 +16,13 @@
         projectSwap(e.target)
         break
 
-      case 'dropdown':
+      case 'project-dropdown':
         if (window.innerWidth > 786) return
-        dropdown(e.target.parentNode)
+        dropdown('.project__description', '.project__description-wrapper')
+        break
+
+      case 'CV-dropdown':
+        dropdown('.CV__main__secondary__dropdown', '.CV__main__secondary__dropdown__wrapper')
         break
 
       default:
@@ -92,41 +97,41 @@
     }
   }
 
-  function dropdown(element) {
+  function dropdown(element, dropdown) {
 
-    if (!element.classList.contains('active--dropdown')) {
-      enableDropdown(element)
+    if (!document.querySelector(`${element}`).classList.contains('active--dropdown')) {
+      enableDropdown(element, dropdown)
     } else {
       disableDropdown(element)
     }
 
     //contant scaling
     window.addEventListener('resize', () => {
-      if (window.innerWidth < 768 && element.classList.contains('active--dropdown')) {
-        enableStyle(element)
+      if (window.innerWidth < 768 && document.querySelector(`${element}`).classList.contains('active--dropdown')) {
+        enableStyle(element, dropdown)
       } else {
         disableDropdown(element)
       }
     })
 
-    function enableDropdown(element) {
-      element.classList.add('active--dropdown')
-      enableStyle(element)
+    function enableDropdown(element, dropdown) {
+      document.querySelector(`${element}`).classList.add('active--dropdown')
+      enableStyle(element, dropdown)
     }
 
     function disableDropdown(element) {
-      element.classList.remove('active--dropdown')
+      document.querySelector(`${element}`).classList.remove('active--dropdown')
       disableStyle(element)
     }
 
-    function enableStyle(element) {
-      let contentHeight = element.querySelector('.project__description-wrapper').getBoundingClientRect().height
+    function enableStyle(element, dropdown) {
+      let contentHeight = document.querySelector(`${dropdown}`).getBoundingClientRect().height
 
-      element.style.paddingBottom = `${contentHeight}px`;
+      document.querySelector(`${element}`).style.paddingBottom = `${contentHeight}px`;
     }
 
     function disableStyle(element) {
-      element.style.paddingBottom = `unset`
+      document.querySelector(`${element}`).style.paddingBottom = `unset`
     }
   }
 
