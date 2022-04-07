@@ -28,9 +28,10 @@
 //projects page
 @import './components/projects-page/projects';
 
-
-//about page
-@import './components/about-page/about-sidebar';
+//resume page
+@import './components/resume-page/resume';
+@import './components/resume-page/resume-main';
+@import './components/resume-page/resume-sidebar';
 
 html {
   box-sizing: border-box;
