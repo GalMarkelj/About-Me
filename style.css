@@ -790,7 +790,8 @@
 
 .CV {
   margin-top: 80px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
 }
 
 .CV__main {
@@ -1014,6 +1015,37 @@
   height: 500px;
   width: 50%;
   background-color: #e310cb;
+}
+
+.CV__decoration {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.CV__decoration div {
+  top: 0;
+  left: 0;
+  clip-path: polygon(50% 0, 100% 22%, 100% 75%, 50% 100%, 0 78%, 0 25%);
+  width: 100%;
+  height: 100%;
+  background-color: #0d314b;
+}
+
+.CV__decoration div:last-child {
+  z-index: 999;
+  left: 40%;
+  background-color: #86fbfb;
+}
+
+.CV__decoration--top {
+  top: -80px;
+  right: 0;
+}
+
+.CV__decoration--bottom {
+  bottom: -100px;
+  right: 0;
 }
 
 html {
