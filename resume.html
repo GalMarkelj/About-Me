@@ -107,68 +107,78 @@
       </div>
 
       <div class="CV__sidebar__secondary pos--rel">
-        <div class="CV__sidebar__secondary__polygon"></div>
-        <div class="CV__sidebar__secondary__content">
 
-          <h4 class="pos--rel">ABOUT ME</h4>
-
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima temporibus non corrupti. Autem ex porro architecto similique perspiciatis dolorem consequatur nihil soluta amet facere officiis ut molestiae maxime placeat tempore earum natus esse saepe.
-          </p>
-
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo deleniti blanditiis omnis ab assumenda fuga iste laboriosam natus odio iure?</p>
-
-          <h4 class="pos--rel">PERSONAL SKILLS</h4>
-
-          <ul>
-
-            <li class="flex flex--apart flex--middle ">
-              Something
-              <div class="progress-bar">
-                <div class="progress-bar__progress" style="--load-progress : 20%;"></div>
-              </div>
-            </li>
-
-            <li class="flex flex--apart flex--middle ">
-              Something
-              <div class="progress-bar">
-                <div class="progress-bar__progress" style="--load-progress : 50%;"></div>
-              </div>
-            </li>
-
-            <li class="flex flex--apart flex--middle ">
-              Something
-              <div class="progress-bar">
-                <div class="progress-bar__progress" style="--load-progress : 80%;"></div>
-              </div>
-            </li>
-
-            <li class="flex flex--apart flex--middle ">
-              Something
-              <div class="progress-bar">
-                <div class="progress-bar__progress" style="--load-progress : 10%;"></div>
-              </div>
-            </li>
-
-            <li class="flex flex--apart flex--middle ">
-              Something
-              <div class="progress-bar">
-                <div class="progress-bar__progress" style="--load-progress : 50%;"></div>
-              </div>
-            </li>
-
-          </ul>
-
-          <h4 class="pos--rel">CONTACT</h4>
-
-          <ul>
-            <li><span class="fa-brands fa-discord" aria-hidden="true"></span>Something</li>
-            <li><span class="fa-solid fa-envelope" aria-hidden="true"></span>Something</li>
-            <li><span class="fa-brands fa-instagram" aria-hidden="true"></span>Something</li>
-            <li><span class="fa-brands fa-github" aria-hidden="true"></span>Something</li>
-          </ul>
-
+        <div class="CV__sidebar__secondary__polygon flex flex--end flex--bottom">
+          <div class="CV__main__secondary__polygon__btn dropdown-btn flex flex--end flex--middle js--click" data-action="CV-sidebar-dropdown">
+            <span>About me</span>
+            <span class="fa-solid fa-angle-down"></span>
+          </div>
         </div>
+
+        <div class="pos--rel">
+          <div class="CV__sidebar__secondary__content">
+
+            <h4 class="pos--rel">ABOUT ME</h4>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima temporibus non corrupti. Autem ex porro architecto similique perspiciatis dolorem consequatur nihil soluta amet facere officiis ut molestiae maxime placeat tempore earum natus esse saepe.
+            </p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo deleniti blanditiis omnis ab assumenda fuga iste laboriosam natus odio iure?</p>
+
+            <h4 class="pos--rel">PERSONAL SKILLS</h4>
+
+            <ul>
+
+              <li class="flex flex--apart flex--middle ">
+                Something
+                <div class="progress-bar">
+                  <div class="progress-bar__progress" style="--load-progress : 20%;"></div>
+                </div>
+              </li>
+
+              <li class="flex flex--apart flex--middle ">
+                Something
+                <div class="progress-bar">
+                  <div class="progress-bar__progress" style="--load-progress : 50%;"></div>
+                </div>
+              </li>
+
+              <li class="flex flex--apart flex--middle ">
+                Something
+                <div class="progress-bar">
+                  <div class="progress-bar__progress" style="--load-progress : 80%;"></div>
+                </div>
+              </li>
+
+              <li class="flex flex--apart flex--middle ">
+                Something
+                <div class="progress-bar">
+                  <div class="progress-bar__progress" style="--load-progress : 10%;"></div>
+                </div>
+              </li>
+
+              <li class="flex flex--apart flex--middle ">
+                Something
+                <div class="progress-bar">
+                  <div class="progress-bar__progress" style="--load-progress : 50%;"></div>
+                </div>
+              </li>
+
+            </ul>
+
+            <h4 class="pos--rel">CONTACT</h4>
+
+            <ul>
+              <li><span class="fa-brands fa-discord" aria-hidden="true"></span>Something</li>
+              <li><span class="fa-solid fa-envelope" aria-hidden="true"></span>Something</li>
+              <li><span class="fa-brands fa-instagram" aria-hidden="true"></span>Something</li>
+              <li><span class="fa-brands fa-github" aria-hidden="true"></span>Something</li>
+            </ul>
+
+          </div>
+        </div>
+
         <div class="CV__sidebar__secondary__decoration pos--abs"></div>
       </div>
 
@@ -213,7 +223,7 @@
 
         <div class="CV__main__secondary__dropdown pos--rel">
 
-          <div class="CV__main__secondary__dropdown__btn flex flex--end flex--middle js--click" data-action="CV-dropdown">
+          <div class="CV__main__secondary__dropdown__btn dropdown-btn flex flex--end flex--middle js--click" data-action="CV-dropdown">
             <span>Load more</span>
             <span class="fa-solid fa-angle-down"></span>
           </div>

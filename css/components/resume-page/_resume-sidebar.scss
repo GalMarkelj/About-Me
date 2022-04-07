@@ -1,5 +1,6 @@
 .CV__sidebar {
   max-width: 500px;
+  width: 100%;
   overflow: hidden;
   margin-bottom: 50px;
   margin-right: 5%;
@@ -33,11 +34,19 @@
     //content part
     &__secondary {
       margin-top: -10%;
+      transition: padding .5s ease-in-out;
 
       &__polygon {
         clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
         height: 250px;
         background-color: $dkblue;
+        font-size: 13px !important;
+
+        .dropdown-btn {
+          display: none;
+          padding: 10px;
+          font-size: 1rem;
+        }
       }
       &__content {
         padding: 1rem 1rem 2rem;
@@ -91,4 +100,21 @@
         background-color: $magenta;
       }
     }
+
+  @media (max-width: 1100px) {
+    &__secondary__polygon .dropdown-btn { display: flex; }
+    &__secondary__content { position: absolute; }
+  }
+  @media (max-width: 786px) {
+    max-width: 350px;
+
+    &__primary { height: 350px; }
+
+    &__secondary__polygon { height: 180px; }
+    &__secondary__decoration {
+      top: 70px;
+      clip-path: polygon(0px 18%, 100% 0px, 100% 100%, 0% 100%);
+    }
+    &__secondary__content ul { margin: 0;}
+  }
 }

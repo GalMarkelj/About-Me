@@ -1,3 +1,47 @@
+.btn, .btn--mag {
+  padding: .5rem;
+  border-radius: 5px;
+  border: 0;
+  background-color: blue;
+}
+
+.btn--mag {
+  background-color: #e310cb;
+  color: #f7f8fa;
+}
+
+.btn--mag:hover {
+  background-color: #ff17e4;
+  color: #f7f8fa;
+}
+
+.dropdown-btn {
+  font-weight: 700;
+  color: #86fbfb;
+  transition: color 150ms ease;
+}
+
+.dropdown-btn:hover {
+  color: #e310cb;
+}
+
+.dropdown-btn:active {
+  color: #ff17e4;
+}
+
+.dropdown-btn span {
+  pointer-events: none;
+}
+
+.dropdown-btn [class*="fa-"] {
+  margin-left: 5px;
+  transition: transform .5s ease-in-out;
+}
+
+[class*="active--dropdown"] .dropdown-btn [class*="fa-"] {
+  transform: rotate(180deg);
+}
+
 .flex {
   display: flex;
 }
@@ -158,23 +202,6 @@
 
 .pos--abs {
   position: absolute;
-}
-
-.btn, .btn--mag {
-  padding: .5rem;
-  border-radius: 5px;
-  border: 0;
-  background-color: blue;
-}
-
-.btn--mag {
-  background-color: #e310cb;
-  color: #f7f8fa;
-}
-
-.btn--mag:hover {
-  background-color: #ff17e4;
-  color: #f7f8fa;
 }
 
 #header {
@@ -794,6 +821,27 @@
   overflow: hidden;
 }
 
+@media (max-width: 1100px) {
+  .CV {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .CV__sidebar {
+    order: 2;
+    margin-top: 50px;
+  }
+  .CV__main {
+    order: 1;
+  }
+}
+
+@media (max-width: 786px) {
+  .CV {
+    margin-top: 40px;
+  }
+}
+
 .CV__main {
   max-width: calc(700px - 5%);
   width: 100%;
@@ -877,26 +925,6 @@
 .CV__main__secondary__dropdown__btn {
   margin-top: 3%;
   font-size: 1.6rem;
-  font-weight: 700;
-  color: #86fbfb;
-  transition: color 150ms ease;
-}
-
-.CV__main__secondary__dropdown__btn:hover {
-  color: #e310cb;
-}
-
-.CV__main__secondary__dropdown__btn:active {
-  color: #ff17e4;
-}
-
-.CV__main__secondary__dropdown__btn span {
-  pointer-events: none;
-}
-
-.CV__main__secondary__dropdown__btn [class*="fa-"] {
-  margin-left: 1%;
-  transition: transform .5s ease-in-out;
 }
 
 .CV__main__secondary__dropdown__wrapper {
@@ -908,12 +936,47 @@
   opacity: 1;
 }
 
-.CV__main__secondary__dropdown.active--dropdown .CV__main__secondary__dropdown__btn [class*="fa-"] {
-  transform: rotate(180deg);
+@media (max-width: 786px) {
+  .CV__main__primary {
+    height: 320px;
+  }
+  .CV__main__primary h2 {
+    font-size: 2rem;
+  }
+  .CV__main__primary h3 {
+    font-size: 1.2rem;
+  }
+  .CV__main__secondary h4 {
+    font-size: 1.1em;
+  }
+  .CV__main__secondary__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .CV__main__secondary__item__title h5 {
+    font-size: 1rem;
+  }
+  .CV__main__secondary__item__title p {
+    font-size: .8rem;
+  }
+  .CV__main__secondary__item__description {
+    border-left: none;
+    padding-left: 0;
+  }
+  .CV__main__secondary__item__description h6 {
+    font-size: .8rem;
+  }
+  .CV__main__secondary__dropdown__btn {
+    font-size: 1.3rem;
+  }
 }
 
 .CV__sidebar {
   max-width: 500px;
+  width: 100%;
   overflow: hidden;
   margin-bottom: 50px;
   margin-right: 5%;
@@ -946,12 +1009,20 @@
 
 .CV__sidebar__secondary {
   margin-top: -10%;
+  transition: padding .5s ease-in-out;
 }
 
 .CV__sidebar__secondary__polygon {
   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
   height: 250px;
   background-color: #0d314b;
+  font-size: 13px !important;
+}
+
+.CV__sidebar__secondary__polygon .dropdown-btn {
+  display: none;
+  padding: 10px;
+  font-size: 1rem;
 }
 
 .CV__sidebar__secondary__content {
@@ -1015,6 +1086,34 @@
   height: 500px;
   width: 50%;
   background-color: #e310cb;
+}
+
+@media (max-width: 1100px) {
+  .CV__sidebar__secondary__polygon .dropdown-btn {
+    display: flex;
+  }
+  .CV__sidebar__secondary__content {
+    position: absolute;
+  }
+}
+
+@media (max-width: 786px) {
+  .CV__sidebar {
+    max-width: 350px;
+  }
+  .CV__sidebar__primary {
+    height: 350px;
+  }
+  .CV__sidebar__secondary__polygon {
+    height: 180px;
+  }
+  .CV__sidebar__secondary__decoration {
+    top: 70px;
+    clip-path: polygon(0px 18%, 100% 0px, 100% 100%, 0% 100%);
+  }
+  .CV__sidebar__secondary__content ul {
+    margin: 0;
+  }
 }
 
 .CV__decoration {

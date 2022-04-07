@@ -25,6 +25,10 @@
         dropdown('.CV__main__secondary__dropdown', '.CV__main__secondary__dropdown__wrapper')
         break
 
+      case 'CV-sidebar-dropdown':
+        dropdown('.CV__sidebar__secondary', '.CV__sidebar__secondary__content')
+        break
+
       default:
         console.log('Action not defined')
     }
