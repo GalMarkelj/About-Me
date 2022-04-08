@@ -2,12 +2,13 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: $dkblue;
+
 }
 .projects-section .project {
     @include max-width-middle;
     @include padding-around;
 
-    @media (min-width: 550px) {
+    @media (min-width: 786px) {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         gap: 1rem;
@@ -16,9 +17,10 @@
 .projects-section h2 {
     text-align: center;
     font-size: $font-xl;
-    margin-bottom: $font-xl * 1.5 !important;
-    @media (max-width: 450px) {
+    margin-bottom: 4rem;
+    @media (max-width: 786px) {
         font-size: 2rem;
+        margin-bottom: 2rem;
     }
 }
 .projects-section h3 {
@@ -40,7 +42,7 @@
     justify-content: flex-start;
     gap: 1rem;
     font-size: 1rem;
-    @media (min-width: 550px) {
+    @media (min-width: 786px) {
         justify-content: flex-end;
     }
 }
@@ -55,7 +57,7 @@
 }
 .projects__content {
 
-    @media (min-width: 550px) {
+    @media (min-width: 786px) {
         order: 2;
         text-align: right;
         grid-row: 1/2;
@@ -66,7 +68,7 @@
     @include max-width-middle;
     @include padding-around;
 
-    @media (min-width: 500px) {
+    @media (min-width: 786px) {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         gap: 1rem;
@@ -74,7 +76,7 @@
 }
 .project-opposite .projects__content {
 
-    @media (min-width: 550px) {
+    @media (min-width: 786px) {
         text-align: left;
         grid-column: 1 / 7;
     }
@@ -87,7 +89,7 @@
 
 }
 .project-opposite .projects-section__technologies-list {
-    @media (min-width: 550px) {
+    @media (min-width: 786px) {
         justify-content: flex-start;
     }
 }
