@@ -1,18 +1,16 @@
-.btn, .btn--mag {
+.btn {
   padding: .5rem;
   border-radius: 5px;
   border: 0;
-  background-color: blue;
 }
 
-.btn--mag {
+.btn.btn--mag {
   background-color: #e310cb;
   color: #f7f8fa;
 }
 
-.btn--mag:hover {
+.btn.btn--mag:hover {
   background-color: #ff17e4;
-  color: #f7f8fa;
 }
 
 .dropdown-btn {
