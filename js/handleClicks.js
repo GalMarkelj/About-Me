@@ -18,7 +18,7 @@
 
       case 'project-dropdown':
         if (window.innerWidth > 786) return
-        dropdown('.project__description', '.project__description-wrapper')
+        dropdown(e.target.parentNode, e.target.parentNode.querySelector('.project__description-wrapper'))
         break
 
       case 'CV-dropdown':
@@ -101,41 +101,64 @@
     }
   }
 
+  //function dropdown gets a parent element soo if it is more the same elements it know in which one to searsh
+  //it also gets a dropdown soo that it checks the content height and gives the parent element a padding-bottom
+  //you can insert a DOM element or a class, the result will be the same thanks to the functions that check if it is a class or a DOM element
   function dropdown(element, dropdown) {
 
-    if (!document.querySelector(`${element}`).classList.contains('active--dropdown')) {
-      enableDropdown(element, dropdown)
+    if (!checkElement(element).classList.contains('active--dropdown')) {
+      enableDropdown(element, checkDropdown(dropdown))
     } else {
       disableDropdown(element)
     }
 
     //contant scaling
     window.addEventListener('resize', () => {
-      if (window.innerWidth < 768 && document.querySelector(`${element}`).classList.contains('active--dropdown')) {
-        enableStyle(element, dropdown)
+      if (window.innerWidth < 768 && checkElement(element).classList.contains('active--dropdown')) {
+        enableStyle(element, checkDropdown(dropdown))
       } else {
         disableDropdown(element)
       }
     })
 
     function enableDropdown(element, dropdown) {
-      document.querySelector(`${element}`).classList.add('active--dropdown')
+      checkElement(element).classList.add('active--dropdown')
       enableStyle(element, dropdown)
     }
 
     function disableDropdown(element) {
-      document.querySelector(`${element}`).classList.remove('active--dropdown')
+      checkElement(element).classList.remove('active--dropdown')
       disableStyle(element)
     }
 
     function enableStyle(element, dropdown) {
-      let contentHeight = document.querySelector(`${dropdown}`).getBoundingClientRect().height
+      let contentHeight = dropdown.getBoundingClientRect().height
 
-      document.querySelector(`${element}`).style.paddingBottom = `${contentHeight}px`;
+      checkElement(element).style.paddingBottom = `${contentHeight}px`;
     }
 
     function disableStyle(element) {
-      document.querySelector(`${element}`).style.paddingBottom = `unset`
+      checkElement(element).style.paddingBottom = `unset`
+    }
+
+    function checkElement(element) {
+
+      if (typeof element == 'string') {
+        return (document.querySelector(`${element}`))
+      } else {
+        return element
+      }
+
+    }
+
+    function checkDropdown(dropdown) {
+
+      if (typeof dropdown == 'string') {
+        return (document.querySelector(`${dropdown}`))
+      } else {
+        return dropdown
+      }
+
     }
   }
 
