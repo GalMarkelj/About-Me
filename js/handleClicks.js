@@ -1,5 +1,6 @@
 'use strict';
 (function () {
+
   console.log("handleClicks script is loading successfully !")
   document.addEventListener('click', handleClicks, false)
 
@@ -27,6 +28,10 @@
 
       case 'CV-sidebar-dropdown':
         dropdown('.CV__sidebar__secondary', '.CV__sidebar__secondary__content')
+        break
+
+      case 'slider':
+        slider('.project', e.target, '.project__dot')
         break
 
       default:
@@ -162,4 +167,35 @@
     }
   }
 
+  function slider(elements, clickedItem, dots) {
+
+    const items = document.querySelectorAll(`${elements}`)
+    const itemsList = []
+    let index
+
+    items.forEach(item => {
+      if (!item.getAttribute('data-sliderItem')) return
+
+      itemsList.push(item.getAttribute('data-sliderItem'))
+
+      if (item.parentNode.classList.contains('active--project')) {
+        item.parentNode.classList.remove('active--project')
+      }
+    })
+
+    itemsList.forEach(item => {
+      if(clickedItem.getAttribute('data-slider') == item) {
+        index = itemsList.indexOf(clickedItem.getAttribute('data-slider'))
+      }
+    })
+
+
+    items[index].parentNode.classList.add('active--project')
+    if (clickedItem.classList.contains('slider-dot--active')) return
+    document.querySelectorAll(`${dots}`).forEach(dot => {
+      dot.classList.remove('slider-dot--active')
+    })
+
+    clickedItem.classList.add('slider-dot--active')
+  }
 })()
