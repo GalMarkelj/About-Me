@@ -82,8 +82,13 @@
       margin-bottom: 2rem;
       font-size: 2rem;
     }
-    .project-wrapper { display: none;}
-    .project-wrapper.active--project { display: block; }
+    .slider-wrapper { transition: .5s ease-in-out; }
+    .project-wrapper {
+      position: absolute;
+      opacity: 0;
+      transition: .5s ease-in-out;
+    }
+    .project-wrapper.active--project { opacity: 1; }
     .project__img { margin-bottom: 0; }
   }
 }

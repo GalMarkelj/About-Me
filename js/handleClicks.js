@@ -1,42 +1,37 @@
-'use strict';
-(function () {
+export const handleClicks = (e) => {
 
   console.log("handleClicks script is loading successfully !")
-  document.addEventListener('click', handleClicks, false)
 
-  function handleClicks(e) {
+  if (!e.target.classList.contains('js--click')) return
 
-    if (!e.target.classList.contains('js--click')) return
+  switch (e.target.dataset.action) {
+    case 'toggleNavigation':
+      toggleNavigation()
+      break
 
-    switch (e.target.dataset.action) {
-      case 'toggleNavigation':
-        toggleNavigation()
-        break
+    case 'projectSwap':
+      projectSwap(e.target)
+      break
 
-      case 'projectSwap':
-        projectSwap(e.target)
-        break
+    case 'project-dropdown':
+      if (window.innerWidth > 786) return
+      dropdown(e.target.parentNode, e.target.parentNode.querySelector('.project__description-wrapper'))
+      break
 
-      case 'project-dropdown':
-        if (window.innerWidth > 786) return
-        dropdown(e.target.parentNode, e.target.parentNode.querySelector('.project__description-wrapper'))
-        break
+    case 'CV-dropdown':
+      dropdown('.CV__main__secondary__dropdown', '.CV__main__secondary__dropdown__wrapper')
+      break
 
-      case 'CV-dropdown':
-        dropdown('.CV__main__secondary__dropdown', '.CV__main__secondary__dropdown__wrapper')
-        break
+    case 'CV-sidebar-dropdown':
+      dropdown('.CV__sidebar__secondary', '.CV__sidebar__secondary__content')
+      break
 
-      case 'CV-sidebar-dropdown':
-        dropdown('.CV__sidebar__secondary', '.CV__sidebar__secondary__content')
-        break
+    case 'slider':
+      fadeSlider('.project', e.target, '.project__dot')
+      break
 
-      case 'slider':
-        slider('.project', e.target, '.project__dot')
-        break
-
-      default:
-        console.log('Action not defined')
-    }
+    default:
+      console.log('Action not defined')
   }
 
   function toggleNavigation() {
@@ -167,8 +162,9 @@
     }
   }
 
-  function slider(elements, clickedItem, dots) {
+  function fadeSlider(elements, clickedItem, dots) {
 
+    const slider_wrapper = document.querySelector('.slider-wrapper')
     const items = document.querySelectorAll(`${elements}`)
     const itemsList = []
     let index
@@ -191,11 +187,22 @@
 
 
     items[index].parentNode.classList.add('active--project')
+    enableStyle(items[index])
+
     if (clickedItem.classList.contains('slider-dot--active')) return
     document.querySelectorAll(`${dots}`).forEach(dot => {
       dot.classList.remove('slider-dot--active')
     })
 
     clickedItem.classList.add('slider-dot--active')
+
+    function enableStyle(item) {
+      const item_height = item.parentNode.getBoundingClientRect().height
+      slider_wrapper.style.paddingBottom = `${item_height}px`
+    }
   }
-})()
+
+}
+
+
+export default { handleClicks }

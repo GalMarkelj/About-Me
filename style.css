@@ -676,11 +676,16 @@
     margin-bottom: 2rem;
     font-size: 2rem;
   }
+  .project-section .slider-wrapper {
+    transition: .5s ease-in-out;
+  }
   .project-section .project-wrapper {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease-in-out;
   }
   .project-section .project-wrapper.active--project {
-    display: block;
+    opacity: 1;
   }
   .project-section .project__img {
     margin-bottom: 0;
