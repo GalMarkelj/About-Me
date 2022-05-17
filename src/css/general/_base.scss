@@ -1,0 +1,142 @@
+@use "sass:math";
+
+$gutter_s: (mobile: 12px, tablet: 16px, desktop: 20px) !default;
+$gutter_m: (mobile: 20px, tablet: 32px, desktop: 40px) !default;
+
+// Spacers
+.gutter-top--0 { margin-top: 0; }
+.gutter-top--xs { margin-top: math.div(map-get($gutter_s, mobile), 2); }
+.gutter-top--s { margin-top: math.div(map-get($gutter_m, mobile), 2); }
+.gutter-top--m { margin-top: map-get($gutter_m, mobile); }
+.gutter-top--l { margin-top: map-get($gutter_m, mobile) * 2; }
+.gutter-top--xl { margin-top: map-get($gutter_m, mobile) * 3; }
+.gutter-top--xxl { margin-top: map-get($gutter_m, mobile) * 4; }
+.gutter-bottom--0 { margin-bottom: 0; }
+.gutter-bottom--xxs { margin-bottom: math.div(map-get($gutter_s, mobile), 4); }
+.gutter-bottom--xs { margin-bottom: math.div(map-get($gutter_s, mobile), 2); }
+.gutter-bottom--s { margin-bottom: math.div(map-get($gutter_m, mobile), 2); }
+.gutter-bottom--m { margin-bottom: map-get($gutter_m, mobile); }
+.gutter-bottom--l { margin-bottom: map-get($gutter_m, mobile) * 2; }
+.gutter-bottom--xl { margin-bottom: map-get($gutter_m, mobile) * 3; }
+.gutter-left--0 { margin-left: 0; }
+.gutter-left--xs { margin-left: math.div(map-get($gutter_s, desktop), 2); }
+.gutter-left--s { margin-left: math.div(map-get($gutter_m, mobile), 2); }
+.gutter-left--m { margin-left: map-get($gutter_m, mobile); }
+.gutter-left--l { margin-left: map-get($gutter_m, mobile) * 2; }
+.gutter-left--xl { margin-left: map-get($gutter_m, mobile) * 3; }
+.gutter-right--0 { margin-right: 0; }
+.gutter-right--xs { margin-right: math.div(map-get($gutter_s, mobile), 2); }
+.gutter-right--s { margin-right: math.div(map-get($gutter_m, mobile), 2); }
+.gutter-right--m { margin-right: map-get($gutter_m, mobile); }
+.gutter-right--l { margin-right: map-get($gutter_m, mobile) * 2; }
+.gutter-right--xl { margin-right: map-get($gutter_m, mobile) * 3; }
+@include breakpoint(tablet) {
+  .gutter-top--xs { margin-top: math.div(map-get($gutter_s, tablet), 2); }
+  .gutter-top--s { margin-top: math.div(map-get($gutter_m, tablet), 2); }
+  .gutter-top--m { margin-top: map-get($gutter_m, tablet); }
+  .gutter-top--l { margin-top: map-get($gutter_m, tablet) * 2; }
+  .gutter-top--xl { margin-top: map-get($gutter_m, tablet) * 3; }
+  .gutter-top--xxl { margin-top: map-get($gutter_m, tablet) * 4; }
+  .gutter-bottom--xxs { margin-bottom: math.div(map-get($gutter_s, tablet), 4); }
+  .gutter-bottom--xs { margin-bottom: math.div(map-get($gutter_s, tablet), 2); }
+  .gutter-bottom--s { margin-bottom: math.div(map-get($gutter_m, tablet), 2); }
+  .gutter-bottom--m { margin-bottom: map-get($gutter_m, tablet); }
+  .gutter-bottom--l { margin-bottom: map-get($gutter_m, tablet) * 2; }
+  .gutter-bottom--xl { margin-bottom: map-get($gutter_m, tablet) * 3; }
+  .gutter-left--xs { margin-left: math.div(map-get($gutter_s, tablet), 2); }
+  .gutter-left--s { margin-left: math.div(map-get($gutter_m, tablet), 2); }
+  .gutter-left--m { margin-left: map-get($gutter_m, tablet); }
+  .gutter-left--l { margin-left: map-get($gutter_m, tablet) * 2; }
+  .gutter-left--xl { margin-left: map-get($gutter_m, tablet) * 3; }
+  .gutter-right--xs { margin-right: math.div(map-get($gutter_s, tablet), 2); }
+  .gutter-right--s { margin-right: math.div(map-get($gutter_m, tablet), 2); }
+  .gutter-right--m { margin-right: map-get($gutter_m, tablet); }
+  .gutter-right--l { margin-right: map-get($gutter_m, tablet) * 2; }
+  .gutter-right--xl { margin-right: map-get($gutter_m, tablet) * 3; }
+}
+@include breakpoint(desktop) {
+  .gutter-top--xs { margin-top: math.div(map-get($gutter_s, desktop), 2); }
+  .gutter-top--s { margin-top: math.div(map-get($gutter_m, desktop), 2); }
+  .gutter-top--m { margin-top: map-get($gutter_m, desktop); }
+  .gutter-top--l { margin-top: map-get($gutter_m, desktop) * 2; }
+  .gutter-top--xl { margin-top: map-get($gutter_m, desktop) * 3; }
+  .gutter-top--xxl { margin-top: map-get($gutter_m, desktop) * 4; }
+  .gutter-bottom--xxs { margin-bottom: math.div(map-get($gutter_s, desktop), 4); }
+  .gutter-bottom--xs { margin-bottom: math.div(map-get($gutter_s, desktop), 2); }
+  .gutter-bottom--s { margin-bottom: math.div(map-get($gutter_m, desktop), 2); }
+  .gutter-bottom--m { margin-bottom: map-get($gutter_m, desktop); }
+  .gutter-bottom--l { margin-bottom: map-get($gutter_m, desktop) * 2; }
+  .gutter-bottom--xl { margin-bottom: map-get($gutter_m, desktop) * 3; }
+  .gutter-left--xs { margin-left: math.div(map-get($gutter_s, desktop), 2); }
+  .gutter-left--s { margin-left: math.div(map-get($gutter_m, desktop), 2); }
+  .gutter-left--m { margin-left: map-get($gutter_m, desktop); }
+  .gutter-left--l { margin-left: map-get($gutter_m, desktop) * 2; }
+  .gutter-left--xl { margin-left: map-get($gutter_m, desktop) * 3; }
+  .gutter-right--xs { margin-right: math.div(map-get($gutter_s, desktop), 2); }
+  .gutter-right--s { margin-right: math.div(map-get($gutter_m, desktop), 2); }
+  .gutter-right--m { margin-right: map-get($gutter_m, desktop); }
+  .gutter-right--l { margin-right: map-get($gutter_m, desktop) * 2; }
+  .gutter-right--xl { margin-right: map-get($gutter_m, desktop) * 3; }
+}
+
+// Auto margin
+.gutter-right--auto { margin-right: auto; }
+.gutter-left--auto { margin-left: auto; }
+.gutter-top--auto { margin-top: auto; }
+.gutter-bottom--auto { margin-bottom: auto; }
+.gutter--center { margin: 0 auto; }
+
+
+// Paddings
+.pad--xs { padding: 5px; }
+.pad--s { padding: 10px; }
+.pad--m { padding: 15px; }
+.pad--l { padding: 20px; }
+.pad-side--s {
+  @media (max-width: 1200px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+// Positions
+.pos--rel { position: relative; }
+.pos--abs { position: absolute;}
+
+
+// Display box model
+.d--inline { display: inline; }
+.d--inline-block { display: inline-block; }
+.d--block { display: block; }
+.d--list-item { display: list-item; }
+
+// Layout
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container--s { max-width: 500px; }
+.container--xs { max-width: 450px; }
+
+// Pointer event disabler
+.no--events { pointer-events: none; }
+
+//visable only on mobile
+.mobile--vis {
+  @media (min-width: 786px) { display: none; }
+}
+
+.trans--default { transition: .5s ease-in-out; }
+.trans--slow { transition: .8s ease-in-out; }
+.trans--fast { transition: 150ms ease-in; }
+
+// backgrounds
+.bc-dark--default { background-color: $black; }
+.bc-dark--primary { background-color: $dkblue; }
+.bc-dark--secondary { background-color: $plum; }
+.bc-dark--night { background-color: $night; }
+
+.bc-light--primary { background-color: $magenta; }
+.bc-light--secondary { background-color: $aqua; }

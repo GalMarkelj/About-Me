@@ -1,0 +1,98 @@
+//colors
+$night: rgb(4, 10, 19);
+$black: #171321;
+$dkblue: #0d314b;
+$plum: #4b0d49;
+$hotmag: #ff17e4;
+$magenta: #e310cb;
+$aqua: #86fbfb;
+$white: #f7f8fa;
+
+
+//border color
+$border-primary: linear-gradient(90deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 1));
+
+//font family
+$myFont-mono: "Oxygen mono", monospace;
+$myFont-sans: "Oxygen", sans-serif;
+
+$myFont-m: 2px;
+$myFont-s: 2px;
+$myFont-l: 2px;
+
+
+
+//general files
+@import './general/mixins';
+@import './general/flex';
+@import './general/dimensions';
+@import './general/typography';
+@import './general/base';
+
+
+//buttons
+@import './components/btn';
+
+
+//components
+@import './components/header';
+@import './components/footer';
+@import './components/border';
+@import './components/mobile-navigation-dropdown';
+@import './components/fade-slider';
+@import './components/_logos';
+@import './components/icons';
+
+//main page
+@import './components/main-page/contact-me-section';
+@import './components/main-page/project__section';
+@import './components/main-page/main-section';
+
+//projects page
+@import './components/projects-page/projects';
+
+//resume page
+@import './components/resume-page/resume';
+@import './components/resume-page/resume-main';
+@import './components/resume-page/resume-sidebar';
+@import './components/resume-page/resume-decoration';
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+/* generic styles for the page */
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: rgb(2, 6, 14);
+
+  @media (max-width: 786px) { font-size: $myFont-s; }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  @include flex-XY-center;
+  flex-flow: row wrap;
+}
+
+img { width: 100%; }

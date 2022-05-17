@@ -1,0 +1,8 @@
+.fadeSlider__dot {
+  z-index: 999;
+  border: 2px solid $aqua;
+  border-radius: 50%;
+
+  &:hover { background-color: $aqua; }
+}
+.fadeSlider--active { background-color: $aqua; }

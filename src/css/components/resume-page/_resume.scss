@@ -1,0 +1,9 @@
+.CV {
+  padding-bottom: 150px;
+  overflow: hidden;
+}
+@media (max-width: 1100px) {
+  .CV { @include flex-vertical-X-center; }
+  .CV-sidebar { order: 2; }
+  .CV-main { order: 1; }
+}

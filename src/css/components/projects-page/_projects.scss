@@ -1,0 +1,71 @@
+#projects-page {
+
+  .project {
+    left: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    opacity: 1;
+
+    &.active--project {
+      left: 50% !important;
+      transform: translateX(-50%);
+      opacity: 1;
+      .project__card { display: grid; }
+    }
+  }
+  .slideru {
+    overflow: hidden;
+  }
+  .project__card {
+    display: none;
+    gap: 1.5rem;
+    grid-template-areas:
+      "logo main main"
+      "mobile main main"
+      "mobile program program"
+      "mobile program program"
+      "description description description";
+  }
+  .grid-item--1 { grid-area: logo; }
+  .grid-item--2 { grid-area: mobile; }
+  .grid-item--3 { grid-area: main; }
+  .grid-item--4 { grid-area: program; }
+
+  .grid-item__title  {
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+  }
+  .grid-item__img  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .project__btns {
+    bottom: 50%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .project__btns span:hover {
+    color: rgba(255, 23, 228, 1);
+    transform: scale(1.1);
+  }
+  .project__btns span:active { color: rgb(183, 0, 255); }
+  .project__description {
+    grid-area: description;
+    cursor: pointer;
+  }
+  .project__description.active--dropdown .project__description-wrapper { opacity: 1; }
+  .project__description.active--dropdown .project__description-btn span { transform: rotate(180deg); }
+
+  @media (max-width: 786px) {
+    .grid-item__title { display: none; }
+    .project__description-wrapper {
+      padding-bottom: 10px;
+      opacity: 0;
+    }
+  }
+
+}
+
+

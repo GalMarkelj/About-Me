@@ -1,0 +1,22 @@
+.CV__decoration {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+
+  div {
+    top: 0;
+    left: 0;
+    clip-path: polygon(50% 0, 100% 22%, 100% 75%, 50% 100%, 0 78%, 0 25%);
+
+    &:last-child {
+      z-index: 1;
+      left: 40%;
+    }
+  }
+}
+.CV__decoration--top { top: -80px; right: 0; }
+.CV__decoration--bottom { bottom: -100px; right: 0; }
+
+@media (max-width: 500px) {
+  .CV__decoration--top { top: -100px; }
+}

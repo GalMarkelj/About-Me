@@ -1,233 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="topOfThePage">
 
 <head>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel = "icon" href =
+  "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type = "image/x-icon">
 
   <title>Gal Markelj</title>
 
 </head>
 
 <body>
+  <div class="main-background pos--abs"></div>
+  <div class="height--min-100v expender pos--rel">
 
-  <div class="height--min-100v expender">
-    <header id="header">
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav-list__item">
-            <h1>
-              <a href="index.html" class="header-nav-list-item__link">
-                <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
-                <span>Klavdij - Gal Markelj</span>
-              </a>
-            </h1>
-          </li>
-          <li class="header-nav-list__item"><a class="header-nav-list-item__link"
-                  href="projects.html">Projects</a></li>
-          <li class="header-nav-list__item">
-            <a class="header-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
-              <span class="fa-brands fa-github" aria-hidden="true"></span>
-              <span class="sr-only">Github</span>
+    <header id="header" class="container pad-side--s">
+      <nav>
+        <ul class="f--primary">
+          <li class="header-list__item d--block f--secondary t--center">
+            <a href="index.html" class="t--normal c--default">
+              <img src="./images/logos/KGM_1_outline.svg" alt="Page-logo" class="page-logo">
             </a>
           </li>
-          <li class="header-nav-list__item"><a class="header-nav-list-item__link btn btn--mag" href="resume.html">Resume</a>
+          <li class="header-list__item gutter-right--l"><a class="t--normal c--default f--xl trans--fast" href="projects.html">Projects</a></li>
+          <li class="header-list__item gutter-right--l"><a class="t--normal c--default f--xl trans--fast" href="resume.html">Resume</a>
+          <li class="header-list__item">
+            <a class="t--normal c--default trans--default" href="https://github.com/GalMarkelj" target="blank">
+              <span class="f--xl">Github</span>
+              <span class="fa-brands fa-github c--aqua f--xl gutter-left--xs" aria-hidden="true"></span>
+            </a>
           </li>
-          <li class="header-nav-list__item">
-            <span class="fa-solid fa-bars js--click" id="open-icon" data-action="toggleNavigation"></span>
+          </li>
+          <li class="header-list__item">
+            <span class="fa-solid fa-bars js--click c--aqua h1" id="open-icon" data-action="toggleNavigation"></span>
           </li>
         </ul>
       </nav>
     </header>
 
-    <div class="mobile-navigation-dropdown" id="mobile-main-nav">
-      <div class="mobile-navigation__header">
-        <h2>
-          <a href="index.html" class="header-nav-list-item__link">
-            <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
-            <span>Klavdij - Gal Markelj</span>
+    <div class="mobile-nav trans--slow bc-dark--night width--100p height--100p">
+      <div class="pad--m flex flex--center flex--middle">
+        <h2 class="f--secondary gutter-right--auto">
+          <a href="index.html" class="t--normal c--default">
+            <img src="./images/logos/KGM_1_outline.svg" alt="Page-logo" class="page-logo">
           </a>
         </h2>
-        <span class="fa-solid fa-circle-xmark js--click" id="close-icon" data-action="toggleNavigation"></span>
+        <span class="fa-solid fa-circle-xmark js--click c--aqua h1" id="close-icon" data-action="toggleNavigation"></span>
       </div>
-      <nav class="mobile-navigation">
-        <ul class="mobile-nav__list">
-          <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link"
-                  href="projects.html">Projects</a></li>
-          <li class="mobile-nav-list__item">
-            <a class="mobile-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
-              Github
-              <span class="fa-brands fa-github"></span>
-            </a>
+
+      <div class="border-line"></div>
+
+      <nav class="gutter-top--m gutter-left--m">
+        <ul class="d--list-item f--xl">
+          <li class="gutter-bottom--m">
+            <a class="c--default t--normal" href="projects.html">Projects</a>
           </li>
-          <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link btn btn--mag" href="resume.html">Resume</a>
+          <li class="gutter-bottom--m">
+            <a class="c--default t--normal" href="resume.html">Resume</a>
+          </li>
+          <li">
+            <a class="c--default t--normal" href="https://github.com/GalMarkelj" target="blank">
+              Github
+              <span class="fa-brands fa-github c--aqua"></span>
+            </a>
           </li>
         </ul>
       </nav>
-      <div class="mobile-navigation-footer">
-        <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
-        <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
+
+      <div class="mobile-nav-footer t--center pos--abs">
+        <h2 class="gutter-bottom--s gutter-right--auto f--secondary h3">Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
+        <p class="gutter-bottom--m f--s">&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</p>
       </div>
     </div>
 
-    <section class="main-section">
-
-      <p class="main-section__my-name">Hi, my name is <span>Klavdij - Gal Markelj.</span></p>
-
-      <h2>Junior front-end developer.</h2>
-
-      <p>I'm a student at Erudio collage, direction of informatics.</p>
-      <p>Currently, I'm creating a website for pratice with <a
-              href="https://frontendmasters.com/teachers/jen-kramer/" target="_blank">Frontend Masters</a>.</p>
+    <section class="container gutter-top--xxl pad-side--s">
+      <p class="f--primary f--s">Hi, my name is <span class="d--block h1 f--bold">Klavdij - Gal Markelj</span></p>
+      <p class="gutter-top--s f--m">I'm learning to become a web developer and</p>
+      <p class="f--m">with this website you can see who I am and my progress.</p>
     </section>
+
+    <li><img src="./images/scroll.svg" alt="Animation scroll down icon" class=" pos--abs gutter-bottom--s trans--slow alertIcon"></li>
   </div>
 
-  <div class="border-line"></div>
-
   <section class="project-section">
-    <h2>Projects I'm proud of</h2>
+    <h2 class="t--left gutter-left--xl h1 test pos--rel container">Latest projects</h2>
 
-    <div class="pos--rel slider-wrapper">
+    <div class="pos--rel fadeSlider">
 
-      <div class="project-wrapper max-width-middle active--project pos--rel">
+      <div class="project-wrapper trans--default container active--project pos--rel gutter-top--l">
         <div class="project" data-sliderItem="Beauty - glow">
-          <h4>Latest Project</h4>
-          <h3>Wall of Wonder</h3>
-          <p class="project__description">Description of the project. This should be fairly concise
-            while
-            also describing the key
-            components that
-            you developed or worked on. It can be as long as you need it to be but should at least be a few
-            sentences long. Be sure to include specific links anywhere in the description. A link looks like
-            <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look
-            <a href="#">like this</a> and <a href="#">like this</a>.
+          <span class="f--primary f--s">5.5.2022</span>
+          <h3 class="gutter-top--xxs c--aqua h2">Authentication-app</h3>
+          <p class="gutter-top--xxs f--xs">~In progress~</p>
+          <p class="project__description pad--s gutter-top--s f--l">
+            Purpose of this project was to learn how does the back-end work and besides, it was just as well a school project.
+            As a user you can register, login and then insert your "personal" data and also update it if you like.
+            My plan in the future is to continue further into the deep of the back-end.
+            You can visit the project and set it up locally <a href="https://github.com/GalMarkelj/authentication-app" class="c--mag" target="_blank">HERE.</a>
           </p>
-          <h4>Technologies used include:</h4>
-          <ul class="project__list flex flex--end">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SVG</li>
+          <h4 class="gutter-top--s f--primary f--l">Technologies used include:</h4>
+          <ul class="flex flex--end gutter-top--xs f--m">
+            <li class="gutter-left--s">NodeJs - Express</li>
+            <li class="gutter-left--s">EJS</li>
+            <li class="gutter-left--s">SQLite</li>
           </ul>
+          <p class="gutter-top--s f--xs t--right">For more detailed information about the project, visit <a href="projects.html" class="c--mag">all projects.</a></p>
         </div>
-        <img class="project__img" src="/images/project-ApplicationForm.JPG"
-          alt="Screenshot of the Wall of Wonder." />
+        <img class="project__img pad--s gutter-top--s" src="/images/latest-projects/authentication-app.jpg"
+          alt="latest-projects -> authentication-app" />
       </div>
 
-      <div class="project-wrapper max-width-middle project--opposite">
+      <div class="project-wrapper trans--default container project--opposite gutter-top--xxl">
         <div class="project" data-sliderItem="KGM ~ Parts">
-          <h4>Latest Project</h4>
-          <h3>Wall of Wonder</h3>
-          <p class="project__description">Description of the project. This should be fairly concise
-            while
-            also describing the key
-            components that
-            you developed or worked on. It can be as long as you need it to be but should at least be a few
-            sentences long. Be sure to include specific links anywhere in the description. A link looks like
-            <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look
-            <a href="#">like this</a> and <a href="#">like this</a>.
+          <span class="f--primary f--s">13.4.2022</span>
+          <h3 class="gutter-top--xxs c--aqua h2">Beauty - Glow</h3>
+          <p class="project__description pad--s gutter-top--s bc-dark--default f--l">
+            When my practical education started me and my colleague <a href="https://github.com/sLuka22" class="c--mag">Luka Štiglic</a> were given the assignment to build this project for a customer.
+            This was our first legit project that we build.
           </p>
-          <h4>Technologies used include:</h4>
-          <ul class="project__list flex flex--end">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SVG</li>
+          <h4 class="gutter-top--s f--primary f--l">Technologies used include:</h4>
+          <ul class="flex flex--end gutter-top--xs f--m">
+            <li class="gutter-left--s">Wordpress</li>
+            <li class="gutter-left--s">SCSS</li>
+            <li class="gutter-left--s">PHP</li>
           </ul>
-      </div>
-      <img class="project__img" src="./images/project-KGM ~Parts.JPG"
-        alt="Screenshot of the Wall of Wonder." />
+          <p class="gutter-top--s f--xs">For more detailed information about the project, visit <a href="projects.html" class="c--mag">all projects.</a></p>
+        </div>
+        <img class="project__img pad--s gutter-top--s" src="./images/latest-projects/beauty-glow.jpg"
+        alt="latest-projects -> beauty-glow" />
       </div>
 
-      <div class="project-wrapper max-width-middle">
+      <div class="project-wrapper trans--default container gutter-top--xxl">
         <div class="project" data-sliderItem="test">
-          <h4>Latest Project</h4>
-          <h3>Wall of Wonder</h3>
-          <p class="project__description">Description of the project. This should be fairly concise
-            while
-            also describing the key
-            components that
-            you developed or worked on. It can be as long as you need it to be but should at least be a few
-            sentences long. Be sure to include specific links anywhere in the description. A link looks like
-            <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look
-            <a href="#">like this</a> and <a href="#">like this</a>.
+          <span class="f--primary f--s">10.1.2022</span>
+          <h3 class="gutter-top--xxs c--aqua h2">Aplication form</h3>
+          <p class="project__description pad--s gutter-top--s bc-dark--default f--l">
+            The very first day of my practical education when I met my mentor, I was given an assignment form him to see where my knowledge about programming lies.
           </p>
-          <h4>Technologies used include:</h4>
-          <ul class="project__list flex flex--end">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SVG</li>
+          <h4 class="gutter-top--s f--primary f--l">Technologies used include:</h4>
+          <ul class="flex flex--end gutter-top--xs f--m">
+            <li class="gutter-left--s">HTML</li>
+            <li class="gutter-left--s">CSS</li>
+            <li class="gutter-left--s">JavaScript</li>
           </ul>
+          <p class="gutter-top--s f--xs t--right">For more detailed information about the project, visit <a href="projects.html" class="c--mag">all projects.</a></p>
       </div>
-      <img class="project__img" src="./images/project-BeautyGlow.JPG"
-        alt="Screenshot of the Wall of Wonder." />
+      <img class="project__img pad--s gutter-top--s" src="./images/latest-projects/application-form.JPG"
+        alt="latest-projects -> application-form" />
       </div>
 
     </div>
 
-    <div class="flex flex--center flex--middle">
-      <div class="project__dot js--click slider-dot--active" data-action="slider" data-slider="Beauty - glow"></div>
-      <div class="project__dot js--click" data-action="slider"
-      data-slider="KGM ~ Parts"></div>
-      <div class="project__dot js--click" data-action="slider"
-      data-slider="test"></div>
+    <div class="flex flex--center flex--middle gutter-top--xxl mobile--vis">
+      <div class="fadeSlider__dot trans--fast pad--s gutter-right--s gutter-left--s js--click fadeSlider--active" data-action="fadeSlider" data-slider="Beauty - glow"></div>
+      <div class="fadeSlider__dot trans--fast pad--s gutter-right--s gutter-left--s js--click" data-action="fadeSlider" data-slider="KGM ~ Parts"></div>
+      <div class="fadeSlider__dot trans--fast pad--s gutter-right--s gutter-left--s js--click" data-action="fadeSlider" data-slider="test"></div>
     </div>
 
-    <div class="flex flex--center">
-      <a href="projects.html" class="btn btn--mag">All projects</a>
+    <div class="flex flex--center gutter-top--l">
+      <a href="projects.html" class="btn btn--mag f--l">All projects</a>
+    </div>
+
+  </section>
+
+
+  <section class="pad-side--s" style="background-color:#474747c0;">
+    <div class="contact-box gutter--center t--center container--s">
+      <h2 class="h1">Contact me</h2>
+      <p class="gutter-top--m f--l">I'm always interested to learn new things and also mistakes I make.</p>
+      <div class="gutter-top--m"><a href="mailto:galmarkelj09@gmail.com" class="btn btn--mag f--l">Email me</a></div>
     </div>
   </section>
 
-  <div class="border-line"></div>
-
-  <section class="contact-me-section padding-side">
-    <div class="contact-me-section__box">
-      <h2>Contact me</h2>
-      <p>
-        I'm always interested in getting to know more people or help them.
-      </p>
-      <p><a href="mailto:jen@example.com" class="btn btn--mag">Email me</a></p>
-    </div>
-  </section>
-
-  <div class="border-line"></div>
-
-  <footer id="footer">
-    <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
-    <ul class="footer__list">
-      <li class="footer-list__item">
-        <a href="https://www.instagram.com/gal_markelj/" class="footer-list-item__link" target="blank">
-          <span class="fa-brands fa-instagram" aria-hidden="true"></span>
+  <footer id="footer" class="trans--default t--center pad-side--s pos--rel">
+    <h2 class="h1">Klavdij - Gal Markelj</h2>
+    <ul class="gutter-top--m">
+      <li>
+        <a href="https://www.instagram.com/gal_markelj/" target="blank">
+          <span class="fa-brands fa-instagram f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Instagram</span>
         </a>
       </li>
-      <li class="footer-list__item">
-        <a href="https://discord.com/users/247079542399827968" class="footer-list-item__link" target="blank">
-          <span class="fa-brands fa-discord" aria-hidden="true"></span>
+      <li>
+        <a href="https://discord.com/users/247079542399827968" target="blank">
+          <span class="fa-brands fa-discord f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Discrod</span>
         </a>
       </li>
-      <li class="footer-list__item">
-        <a href="https://github.com/GalMarkelj" class="footer-list-item__link" target="blank">
-          <span class="fab fa-github-square" aria-hidden="true"></span>
+      <li>
+        <a href="https://github.com/GalMarkelj" target="blank">
+          <span class="fab fa-github-square f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Github</span>
         </a>
       </li>
-      <li class="footer-list__item">
+      <li>
         <a href="galmarkelj@envoo.net">
-          <span class="fas fa-envelope" class="footer-list-item__link" aria-hidden="true"></span>
+          <span class="fas fa-envelope f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Email</span>
         </a>
       </li>
     </ul>
-    <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
+    <p class="gutter-top--m f--s">&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</p>
+
+    <a href="#topOfThePage" class="scrollTopIcon pos--abs gutter-bottom--s gutter-right--s">
+      <span class="fa-solid fa-circle-chevron-up f--xxl c--dkblue trans--fast"></span>
+    </a>
+
   </footer>
 
-
-
-  <script src="/js/executeFirst.js"></script>
-  <script src="/js/handleClicks.js"></script>
+  <script src="assets/app.js"></script>
 </body>
 </html>

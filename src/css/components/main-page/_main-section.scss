@@ -1,0 +1,11 @@
+.expender { z-index: 999; }
+.main-background {
+  top: 0;
+  background-image: linear-gradient(to right, rgba(0,0,0,.2), black), url(../../images/background/main-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 140%;
+  z-index: 1;
+  @media (max-width: 786px) { height: 100%; }
+}

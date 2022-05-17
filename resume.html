@@ -1,276 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="topOfThePage">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <title>Resume</title>
 </head>
 
-<body id="projects-page">
+<body>
 
-  <header id="header">
-    <nav class="header-nav">
-      <ul class="header-nav__list">
-        <li class="header-nav-list__item">
-          <h1>
-            <a href="index.html" class="header-nav-list-item__link">
-              <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
-              <span>Klavdij - Gal Markelj</span>
-            </a>
-          </h1>
-        </li>
-        <li class="header-nav-list__item"><a class="header-nav-list-item__link" href="projects.html">Projects</a></li>
-        <li class="header-nav-list__item">
-          <a class="header-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
-            <span class="fa-brands fa-github" aria-hidden="true"></span>
-            <span class="sr-only">Github</span>
+  <header id="header" class="container pad-side--s">
+    <nav>
+      <ul class="f--primary">
+        <li class="header-list__item d--block f--secondary t--center">
+          <a href="index.html" class="t--normal c--default">
+            <img src="./images/logos/KGM_1_outline.svg" alt="Page-logo" class="page-logo">
           </a>
         </li>
-        <li class="header-nav-list__item"><a class="header-nav-list-item__link btn btn--mag" href="resume.html">Resume</a>
+        <li class="header-list__item gutter-right--l"><a class="t--normal c--default f--xl trans--fast" href="projects.html">Projects</a></li>
+        <li class="header-list__item gutter-right--l"><a class="t--normal c--default f--xl trans--fast" href="resume.html">Resume</a>
+        <li class="header-list__item">
+          <a class="t--normal c--default trans--default" href="https://github.com/GalMarkelj" target="blank">
+            <span class="f--xl">Github</span>
+            <span class="fa-brands fa-github c--aqua f--xl gutter-left--xs" aria-hidden="true"></span>
+          </a>
         </li>
-        <li class="header-nav-list__item">
-          <span class="fa-solid fa-bars js--click" id="open-icon" data-action="toggleNavigation"></span>
+        </li>
+        <li class="header-list__item">
+          <span class="fa-solid fa-bars js--click c--aqua h1" id="open-icon" data-action="toggleNavigation"></span>
         </li>
       </ul>
     </nav>
   </header>
 
-  <div class="mobile-navigation-dropdown" id="mobile-main-nav">
-    <div class="mobile-navigation__header">
-      <h2>
-        <a href="index.html" class="header-nav-list-item__link">
-          <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
-          <span>Klavdij - Gal Markelj</span>
+  <div class="mobile-nav trans--slow bc-dark--night width--100p height--100p">
+    <div class="pad--m flex flex--center flex--middle">
+      <h2 class="f--secondary gutter-right--auto">
+        <a href="index.html" class="t--normal c--default">
+          <img src="./images/logos/KGM_1_outline.svg" alt="Page-logo" class="page-logo">
         </a>
       </h2>
-      <span class="fa-solid fa-circle-xmark js--click" id="close-icon" data-action="toggleNavigation"></span>
+      <span class="fa-solid fa-circle-xmark js--click c--aqua h1" id="close-icon" data-action="toggleNavigation"></span>
     </div>
-    <nav class="mobile-navigation">
-      <ul class="mobile-nav__list">
-        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link" href="projects.html">Projects</a></li>
-        <li class="mobile-nav-list__item">
-          <a class="mobile-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
-            Github
-            <span class="fa-brands fa-github"></span>
-          </a>
+
+    <div class="border-line"></div>
+
+    <nav class="gutter-top--m gutter-left--m">
+      <ul class="d--list-item f--xl">
+        <li class="gutter-bottom--m">
+          <a class="c--default t--normal" href="projects.html">Projects</a>
         </li>
-        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link btn btn--mag" href="resume.html">Resume</a>
+        <li class="gutter-bottom--m">
+          <a class="c--default t--normal" href="resume.html">Resume</a>
+        </li>
+        <li">
+          <a class="c--default t--normal" href="https://github.com/GalMarkelj" target="blank">
+            Github
+            <span class="fa-brands fa-github c--aqua"></span>
+          </a>
         </li>
       </ul>
     </nav>
-    <div class="mobile-navigation-footer">
-      <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
-      <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
+
+    <div class="mobile-nav-footer t--center pos--abs">
+      <h2 class="gutter-bottom--s gutter-right--auto f--secondary h3">Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
+      <p class="gutter-bottom--m f--s">&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</p>
     </div>
   </div>
 
-  <section class="CV max-width-middle flex flex--apart flex--top pos--rel padding-side">
+  <section class="CV container flex flex--apart flex--top pos--rel pad-side--s gutter-top--m">
 
     <div class="CV__decoration CV__decoration--top pos--rel pos--abs">
-      <div class="pos--abs"></div>
-      <div class="pos--abs"></div>
+      <div class="pos--abs bc-dark--primary width--100p height--100p"></div>
+      <div class="pos--abs bc-light--secondary width--100p height--100p"></div>
     </div>
     <div class="CV__decoration CV__decoration--bottom pos--rel pos--abs">
-      <div class="pos--abs"></div>
-      <div class="pos--abs"></div>
+      <div class="pos--abs bc-dark--primary width--100p height--100p"></div>
+      <div class="pos--abs bc-light--secondary width--100p height--100p"></div>
     </div>
 
-    <div class="CV__sidebar">
+    <div class="CV-sidebar width--100p gutter-bottom--m">
 
-      <div class="CV__sidebar__primary pos--rel">
-          <div class="CV__sidebar__primary__polygon pos--abs"></div>
-          <img src="/images/TEST/test4.jpg" alt="" class="pos--abs">
+      <div class="CV-sidebar__top pos--rel">
+          <div class="CV-sidebar__top__polygon pos--abs bc-dark--secondary"></div>
+          <img src="/images/me/preview-9.jpg" alt="" class="pos--abs">
       </div>
 
-      <div class="CV__sidebar__secondary pos--rel">
+      <div class="CV-sidebar__bottom trans--slow pos--rel">
 
-        <div class="CV__sidebar__secondary__polygon flex flex--end flex--bottom">
-          <div class="CV__main__secondary__polygon__btn dropdown-btn flex flex--end flex--middle js--click" data-action="CV-sidebar-dropdown">
+        <div class="CV-sidebar__bottom__polygon flex flex--end flex--bottom bc-dark--primary">
+          <div class="CV-main__content__polygon__btn dropdown-btn trans--fast flex flex--end flex--middle pad--s js--click f--l" data-action="CV-sidebar-dropdown">
             <span>About me</span>
             <span class="fa-solid fa-angle-down"></span>
           </div>
         </div>
 
         <div class="pos--rel">
-          <div class="CV__sidebar__secondary__content">
+          <div class="CV-sidebar__bottom__content bc-dark--primary">
 
-            <h4 class="pos--rel">ABOUT ME</h4>
+            <h4 class="pos--rel gutter-bottom--s h3">ABOUT ME</h4>
 
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima temporibus non corrupti. Autem ex porro architecto similique perspiciatis dolorem consequatur nihil soluta amet facere officiis ut molestiae maxime placeat tempore earum natus esse saepe.
+            <p class="f--m">
+              I'm 21 years old and I am a student at <a href="https://www.erudio.si/" class="c--mag">ERUDIO</a> higher college.
+              I started gaining my work experience at the age of 15 while studying until this year
+              where I have devoted hundred percent of my time to learning the direction I want to pursue through life, programming.
             </p>
+            <p class="f--m gutter-top--xs">
+              I am hardworking, prudent, above all reliable and I like to meet new people, challenges, habits and experiences wherever I go.
+            </p>
+            <p class="f--m gutter-top--xs">
+              I like to spend my free time with family, friends and animals.
+            </p>
+            <p class="f--m gutter-top--xs">
+              I like to do sports, construction work, programming and above all learning new things and creating.
+            </p>
+            <p class="f--m gutter-top--xs">
+              I also spend a lot of time in the motorcycle world because I love motorcycles, cars, martial arts or we could say in one word adrenaline.
+            </p>
+            <h4 class="pos--rel gutter-bottom--s gutter-top--s h3">PERSONAL SKILLS</h4>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo deleniti blanditiis omnis ab assumenda fuga iste laboriosam natus odio iure?</p>
+            <ul class="d--inline-block f--m">
 
-            <h4 class="pos--rel">PERSONAL SKILLS</h4>
-
-            <ul>
-
-              <li class="flex flex--apart flex--middle ">
-                Something
-                <div class="progress-bar">
-                  <div class="progress-bar__progress" style="--load-progress : 20%;"></div>
-                </div>
+              <li class="">
+                Knowledge of Slovenian and English,
               </li>
 
-              <li class="flex flex--apart flex--middle ">
-                Something
-                <div class="progress-bar">
-                  <div class="progress-bar__progress" style="--load-progress : 50%;"></div>
-                </div>
+              <li class="gutter-top--xs">
+                performance and presentation experience,
               </li>
 
-              <li class="flex flex--apart flex--middle ">
-                Something
-                <div class="progress-bar">
-                  <div class="progress-bar__progress" style="--load-progress : 80%;"></div>
-                </div>
+              <li class="gutter-top--xs">
+                ability to communicate well and maintain good relationships with colleagues and customers,
               </li>
 
-              <li class="flex flex--apart flex--middle ">
-                Something
-                <div class="progress-bar">
-                  <div class="progress-bar__progress" style="--load-progress : 10%;"></div>
-                </div>
+              <li class="gutter-top--xs">
+                good organizational skills,
               </li>
 
-              <li class="flex flex--apart flex--middle ">
-                Something
-                <div class="progress-bar">
-                  <div class="progress-bar__progress" style="--load-progress : 50%;"></div>
-                </div>
+              <li class="gutter-top--xs">
+                ability to lead a group
               </li>
 
             </ul>
 
-            <h4 class="pos--rel">CONTACT</h4>
+            <h4 class="pos--rel gutter-bottom--s gutter-top--s h3">CONTACT</h4>
 
-            <ul>
-              <li><span class="fa-brands fa-discord" aria-hidden="true"></span>Something</li>
-              <li><span class="fa-solid fa-envelope" aria-hidden="true"></span>Something</li>
-              <li><span class="fa-brands fa-instagram" aria-hidden="true"></span>Something</li>
-              <li><span class="fa-brands fa-github" aria-hidden="true"></span>Something</li>
+            <ul class="d--inline-block f--m">
+              <li><span class="fa-solid fa-phone gutter-right--xs" aria-hidden="true"></span>040/603-800</li>
+              <li><span class="fa-solid fa-envelope gutter-right--xs gutter-top--xs" aria-hidden="true"></span>galmarkelj09@gmail.com</li>
             </ul>
 
           </div>
         </div>
 
-        <div class="CV__sidebar__secondary__decoration pos--abs"></div>
+        <div class="CV-sidebar__bottom__decoration width--50p pos--abs bc-light--primary"></div>
       </div>
 
     </div>
 
-    <div class="CV__main">
+    <div class="CV-main width--100p">
 
-      <div class="CV__main__primary flex--vertical flex--end">
-        <h2>KLAVDIJ - GAL
-          <span>MARKELJ</span>
+      <div class="CV-main__title flex--vertical flex--end f--l">
+        <h2 class="t--nowrap ">KLAVDIJ - GAL
+          <span class="d--block c--aqua">MARKELJ</span>
         </h2>
-        <h3>WEB DEVELOPER</h3>
-        <div class="border-line"></div>
+        <h3 class="f--xxl">WEB DEVELOPER</h3>
+        <div class="border-line gutter-bottom--m gutter-top--s"></div>
       </div>
 
-      <div class="CV__main__secondary">
+      <div class="CV-main__content height--100p">
 
-        <h4>EXPERIENCE</h4>
+        <h4 class="h2 pad--l">EDUCATION</h4>
 
-        <div class="CV__main__secondary__item flex flex--apart flex--top">
-          <div class="CV__main__secondary__item__title">
-            <h5>SOMETHING</h5>
-            <p>2012-2014</p>
+        <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s gutter-top--s">
+          <div class="CV-main__content__item__title gutter-right--s">
+            <h5 class=" gutter-top--s h3">Higher college</h5>
+            <p class="f--s">2020-2021</p>
           </div>
-          <div class="CV__main__secondary__item__description">
-            <h6>SOMETHING</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autem inventore in veniam deleniti reiciendis, voluptate ea voluptatibus est temporibus necessitatibus nostrum quod vero quis, asperiores rerum aut harum aliquam?</p>
-            <div class="bottom-border"></div>
-          </div>
-        </div>
-        <div class="CV__main__secondary__item flex flex--apart flex--top">
-          <div class="CV__main__secondary__item__title">
-            <h5>SOMETHING</h5>
-            <p>2012-2014</p>
-          </div>
-          <div class="CV__main__secondary__item__description">
-            <h6>SOMETHING</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autem inventore in veniam deleniti reiciendis, voluptate ea voluptatibus est temporibus necessitatibus nostrum quod vero quis, asperiores rerum aut harum aliquam?</p>
-            <div class="bottom-border"></div>
+          <div class="CV-main__content__item__description">
+            <h6 class="gutter-top--s f--m">Educational center <a href="https://www.erudio.si/" class="c--mag">ERUDIO</a></h6>
+            <p class="f--s">
+              Here is where I am now learning to become Computer Engineer.
+            </p>
+            <div class="bottom-border gutter-top--s"></div>
           </div>
         </div>
+        <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+          <div class="CV-main__content__item__title gutter-right--s">
+            <h5 class=" gutter-top--s h3">High school</h5>
+            <p class="f--s">2018-2020</p>
+          </div>
+          <div class="CV-main__content__item__description">
+            <h6 class="gutter-top--s f--m">High school of technical professions <a href="" class="c--mag">Šiška</a></h6>
+            <p class="f--s">Graduated and obtained the title of Computer Technician</p>
+            <div class="bottom-border gutter-top--s"></div>
+          </div>
+        </div>
 
-        <div class="CV__main__secondary__dropdown pos--rel">
+        <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+          <div class="CV-main__content__item__title gutter-right--s">
+            <h5 class=" gutter-top--s h3">High school</h5>
+            <p class="f--s">2015-2018</p>
+          </div>
+          <div class="CV-main__content__item__description">
+            <h6 class="gutter-top--s f--m">High school of technical professions <a href="" class="c--mag">Šiška</a></h6>
+            <p class="f--s">Completed vocational education or. final exams and obtained the title of electrician</p>
+            <div class="bottom-border gutter-top--s gutter-bottom--s"></div>
+          </div>
+        </div>
 
-          <div class="CV__main__secondary__dropdown__btn dropdown-btn flex flex--end flex--middle js--click" data-action="CV-dropdown">
+        <h4 class="h2 pad--l">WORK EXPERIENCE</h4>
+
+        <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s gutter-top--s">
+          <div class="CV-main__content__item__title gutter-right--s">
+            <h5 class=" gutter-top--s h3">ENVOO d.o.o.</h5>
+            <p class="f--s">2022</p>
+          </div>
+          <div class="CV-main__content__item__description">
+            <h6 class="gutter-top--s f--m">Web developer</h6>
+            <p class="f--s">This was my first job as a developer. The exeprience I gained while working here you can see <a href="#footer" class="c--mag">below.</a></p>
+            <div class="bottom-border gutter-top--s"></div>
+          </div>
+        </div>
+        <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+          <div class="CV-main__content__item__title gutter-right--s">
+            <h5 class=" gutter-top--s h3">Hofer d.d.</h5>
+            <p class="f--s">2021</p>
+          </div>
+          <div class="CV-main__content__item__description">
+            <h6 class="gutter-top--s f--m">Seller in a grocery store</h6>
+            <p class="f--s">This was temporary work due to COVID-19 pendamy. I gained ability to communicate well and maintain good relationships with colleagues and clients that I have acquired through years of student work</p>
+            <div class="bottom-border gutter-top--s"></div>
+          </div>
+        </div>
+
+        <div class="CV-main__content__dropdown trans--slow pos--rel">
+
+          <div class="CV-main__content__dropdown__btn dropdown-btn trans--fast flex flex--end flex--middle gutter-top--s gutter-bottom--s js--click f--l" data-action="CV-dropdown">
             <span>Load more</span>
             <span class="fa-solid fa-angle-down"></span>
           </div>
 
-          <div class="pos--abs CV__main__secondary__dropdown__wrapper">
-            <div class="CV__main__secondary__item flex flex--apart flex--top">
-              <div class="CV__main__secondary__item__title">
-                <h5>SOMETHING</h5>
-                <p>2012-2014</p>
+          <div class="pos--abs CV-main__content__dropdown__wrapper trans--slow">
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">Hofer d.d.</h5>
+                <p class="f--s">2021</p>
               </div>
-              <div class="CV__main__secondary__item__description">
-                <h6>SOMETHING</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autem inventore in veniam deleniti reiciendis, voluptate ea voluptatibus est temporibus necessitatibus nostrum quod vero quis, asperiores rerum aut harum aliquam?</p>
-                <div class="bottom-border"></div>
-              </div>
-            </div>
-            <div class="CV__main__secondary__item flex flex--apart flex--top">
-              <div class="CV__main__secondary__item__title">
-                <h5>SOMETHING</h5>
-                <p>2012-2014</p>
-              </div>
-              <div class="CV__main__secondary__item__description">
-                <h6>SOMETHING</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autem inventore in veniam deleniti reiciendis, voluptate ea voluptatibus est temporibus necessitatibus nostrum quod vero quis, asperiores rerum aut harum aliquam?</p>
-                <div class="bottom-border"></div>
+              <div class="CV-main__content__item__description">
+                <h6 class="gutter-top--s f--m">Work due to the COVID-19 pandemic</h6>
+                <p class="f--s">This was temporary work due to COVID-19 pendamy and my job was cleaning carts, guiding people.</p>
+                <div class="bottom-border gutter-top--s"></div>
               </div>
             </div>
-            <div class="CV__main__secondary__item flex flex--apart flex--top">
-              <div class="CV__main__secondary__item__title">
-                <h5>SOMETHING</h5>
-                <p>2012-2014</p>
+
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">ŽUPEVC d.o.o.</h5>
+                <p class="f--s">2020</p>
               </div>
-              <div class="CV__main__secondary__item__description">
-                <h6>SOMETHING</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autem inventore in veniam deleniti reiciendis, voluptate ea voluptatibus est temporibus necessitatibus nostrum quod vero quis, asperiores rerum aut harum aliquam?</p>
-                <div class="bottom-border"></div>
+              <div class="CV-main__content__item__description">
+                <h6 class="gutter-top--s f--m">Electrician</h6>
+                <p class="f--s">Here I gained a lot of experience from the world of electricians as well as good organizational skills, ability to lead a group</p>
+                <div class="bottom-border gutter-top--s gutter-bottom--s"></div>
+              </div>
+            </div>
+
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">I.S.T. Avtodeli d.o.o</h5>
+                <p class="f--s">2020</p>
+              </div>
+              <div class="CV-main__content__item__description">
+                <h6 class="gutter-top--s f--m">Warehouseman</h6>
+                <p class="f--s">My job here was to reception and delivery of car parts</p>
+                <div class="bottom-border gutter-top--s gutter-bottom--s"></div>
+              </div>
+            </div>
+
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">Picerija Arkada d.o.o. </h5>
+                <p class="f--s">2019-2020</p>
+              </div>
+              <div class="CV-main__content__item__description">
+                <h6 class="gutter-top--s f--m">Driver</h6>
+                <p class="f--s">My job here was to deliver food as well as food preparation. Here I gained a lot of experience as a driver and a little knowledge as a cook</p>
+                <div class="bottom-border gutter-top--s gutter-bottom--s"></div>
+              </div>
+            </div>
+
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">Mercator center Šiška</h5>
+                <p class="f--s">2018-2019</p>
+              </div>
+              <div class="CV-main__content__item__description">
+                <h6 class="gutter-top--s f--m">Waiter</h6>
+                <p class="f--s">Here I learned coffee preparation and art tricks.</p>
+                <div class="bottom-border gutter-top--s gutter-bottom--s"></div>
+              </div>
+            </div>
+
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">E. Leclerc </h5>
+                <p class="f--s">2018</p>
+              </div>
+              <div class="CV-main__content__item__description">
+                <h6 class="gutter-top--s f--m">Warehouseman</h6>
+                <p class="f--s">My main job here was to delivery of goods to the store on the shelves</p>
+                <div class="bottom-border gutter-top--s gutter-bottom--s"></div>
+              </div>
+            </div>
+
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">Elcom d.o.o.</h5>
+                <p class="f--s">2016-2017</p>
+              </div>
+              <div class="CV-main__content__item__description">
+                <h6 class="gutter-top--s f--m">Electrician</h6>
+                <p class="f--s">This was my very first legit job where I gained basics from the electrical world</p>
+                <div class="bottom-border gutter-top--s gutter-bottom--s"></div>
               </div>
             </div>
           </div>
-
         </div>
 
-        <h4>EDUCATION</h4>
+        <h4 class="h2 pad--l">DEVELOPER EXPERIENCE</h4>
 
-        <div class="CV__main__secondary__item flex flex--apart flex--top">
-          <div class="CV__main__secondary__item__title">
-            <h5>SOMETHING</h5>
-            <p>2012-2014</p>
+        <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+          <div class="CV-main__content__item__title gutter-right--s">
+            <h5 class=" gutter-top--s h3">Front-end</h5>
           </div>
-          <div class="CV__main__secondary__item__description">
-            <h6>SOMETHING</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autem inventore in veniam deleniti reiciendis, voluptate ea voluptatibus est temporibus necessitatibus nostrum quod vero quis, asperiores rerum aut harum aliquam?</p>
-            <div class="bottom-border"></div>
+          <div class="CV-main__content__item__description">
+            <h6 class="gutter-top--s f--m">HTML</h6>
+            <p class="f--s">While writing HTML code I'm using <a href="http://getbem.com/" class="c--mag">BEM</a> methodology and semantics. In my stylesheet I am using predefined classes that I use later in my markup as result of less stylesheet code, faster production and for cleaner and more readable code.</p>
+            <p class="f--s">With my latest <a href="projects.html" class="c--mag">project</a> I also became familiar with <a href="https://ejs.co/" class="c--mag">EJS</a> view engien where I send data from the back-end to the screen.</p>
+            <div class="bottom-border gutter-top--s"></div>
           </div>
         </div>
-        <div class="CV__main__secondary__item flex flex--apart flex--top">
-          <div class="CV__main__secondary__item__title">
-            <h5>SOMETHING</h5>
-            <p>2012-2014</p>
+
+
+        <div class="CV-main__content__dropdown trans--slow pos--rel">
+
+          <div class="CV-main__content__dropdown__btn dropdown-btn trans--fast flex flex--end flex--middle gutter-top--s gutter-bottom--s js--click f--l" data-action="CV-dropdown-2">
+            <span>Load more</span>
+            <span class="fa-solid fa-angle-down"></span>
           </div>
-          <div class="CV__main__secondary__item__description">
-            <h6>SOMETHING</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autem inventore in veniam deleniti reiciendis, voluptate ea voluptatibus est temporibus necessitatibus nostrum quod vero quis, asperiores rerum aut harum aliquam?</p>
+
+          <div class="pos--abs CV-main__content__dropdown__wrapper trans--slow">
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3"></h5>
+                <p class="f--s"></p>
+              </div>
+              <div class="CV-main__content__item__description">
+                <h6 class="gutter-top--s f--m">CSS</h6>
+                <p class="f--s">As far as we talk about CSS functionality I belive I have the knowledge of advanced grid and flexbox responsive layouts and responsive web design.</p>
+                <p class="f--s">Knowledge of writing CSS with superpowers, <a href="https://sass-lang.com/">SCSS</a>. To design my stylesheet code I'm using <a href="http://smacss.com/" class="c--mag">SMACSS</a> style guide to avoid repetition and redundancy, while keeping everything readable and maintainable. Due to <a href="https://frontendmasters.com/teachers/mike-north/" class="c--mag">Mike North</a> from <a href="https://frontendmasters.com/dashboard/" class="c--mag">frontend masters</a> I know how to use Sass fundamentals.</p>
+                <div class="bottom-border gutter-top--s"></div>
+              </div>
+            </div>
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3"></h5>
+              </div>
+              <div class="CV-main__content__item__description">
+
+                <h6 class="gutter-top--s f--m">JavaScript</h6>
+                <p class="f--s">I belvie I contain beyond basic knowledge in the world of JavaScript. As far as I talk about the front-end I have a good perspective about building basic animations, like the slider you can see where I show you my <a href="projects.html" class="c--mag">projects</a>. Due to <a href="https://frontendmasters.com/teachers/kyle-simpson/" class="c--mag">Kyle Simpson</a> from <a href="https://frontendmasters.com/dashboard/" class="c--mag">Frontend Masters</a> I have basic knowledge about nested scopes, modules, closure, public/private accessible methods, callbacks, events, functional programming, sending content to the page from the back-end.</p>
+                <p class="f--s">To complie I use an extremely fast JavaScript bundler called <a href="https://esbuild.github.io/" class="c--mag">esbuild.</a></p>
+                <div class="bottom-border gutter-top--s"></div>
+              </div>
+            </div>
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">Back-end</h5>
+              </div>
+              <div class="CV-main__content__item__description">
+                <p class="f--s">I became familiar with back-end on my last <a href="projects.html" class="c--mag">project</a> where I learned how to use server-side JavaScript run-time environment called <a href="https://nodejs.org/en/" class="c--mag">NodeJs</a> with <a href="https://expressjs.com/" class="c--mag">Express</a> framework, connect to the database using <a href="http://knexjs.org/" class="c--mag">knex</a> and its syntax to execute CRUID operations, build a local session using <a href="https://www.passportjs.org/" class="c--mag">passport</a> framework for authentication, bcrypt the  password by using bcrypt framework and connect everything by usging RESTful API architectural style. My plan in the future is to upgrade that by learning how to use JWT.</p>
+                <div class="bottom-border gutter-top--s"></div>
+              </div>
+            </div>
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">Wordpress</h5>
+              </div>
+              <div class="CV-main__content__item__description">
+                <p class="f--s">I build one website with my college <a href="https://github.com/sLuka22" class="c--mag">Luka Štiglic</a> using wordpress with <a href="https://anpsthemes.com/" class="c--mag">anpsthemes</a> and <a href="https://wpbakery.com/" class="c--mag">WPBakery</a>. I had to modify built-in plugins, create new shortcodes and portfolio using PHP.</p>
+                <div class="bottom-border gutter-top--s"></div>
+              </div>
+            </div>
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">SQL</h5>
+              </div>
+              <div class="CV-main__content__item__description">
+                <p class="f--s">I contain basic knowledge to execute CRUID operations and create relationships with SQL syntax.</p>
+                <div class="bottom-border gutter-top--s"></div>
+              </div>
+            </div>
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">Python</h5>
+              </div>
+              <div class="CV-main__content__item__description">
+                <p class="f--s">Python was my first programming language that I had to learn in high school. Hight school gave me basic knowladge about its syntax and how programming works. Later I started to dig in to learn more soo I build a simple calculator using Kivy GUI.</p>
+                <div class="bottom-border gutter-top--s"></div>
+              </div>
+            </div>
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">Git</h5>
+              </div>
+              <div class="CV-main__content__item__description">
+                <p class="f--s">Sice every of my projects goes trough github, I contain basic knowledge of git, like cloning the repository, creating, pushing and later merging branches, also putting the chagnes in to the review and fixing rebase conflicts.</p>
+                <div class="bottom-border gutter-top--s"></div>
+              </div>
+            </div>
+            <div class="CV-main__content__item flex flex--apart flex--top gutter-right--s">
+              <div class="CV-main__content__item__title gutter-right--s">
+                <h5 class=" gutter-top--s h3">Linux</h5>
+              </div>
+              <div class="CV-main__content__item__description">
+                <p class="f--s">When I started my practical education I swaped on to WSL Ubuntu for development purposes. With that said I can say that enjoy using it and that I have basic knowledge about Linux and I'm planning with my next computer for development to be full time on it.</p>
+                <div class="bottom-border gutter-top--s"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
 
     </div>
 
@@ -278,38 +444,43 @@
 
   <div class="border-line"></div>
 
-  <footer id="footer">
-    <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
-    <ul class="footer__list">
-      <li class="footer-list__item">
-        <a href="https://www.instagram.com/gal_markelj/" class="footer-list-item__link" target="blank">
-          <span class="fa-brands fa-instagram" aria-hidden="true"></span>
+  <footer id="footer" class="trans--default t--center pad-side--s pos--rel">
+    <h2 class="h1">Klavdij - Gal Markelj</h2>
+    <ul class="gutter-top--m">
+      <li>
+        <a href="https://www.instagram.com/gal_markelj/" target="blank">
+          <span class="fa-brands fa-instagram f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Instagram</span>
         </a>
       </li>
-      <li class="footer-list__item">
-        <a href="https://discord.com/users/247079542399827968" class="footer-list-item__link" target="blank">
-          <span class="fa-brands fa-discord" aria-hidden="true"></span>
+      <li>
+        <a href="https://discord.com/users/247079542399827968" target="blank">
+          <span class="fa-brands fa-discord f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Discrod</span>
         </a>
       </li>
-      <li class="footer-list__item">
-        <a href="https://github.com/GalMarkelj" class="footer-list-item__link" target="blank">
-          <span class="fab fa-github-square" aria-hidden="true"></span>
+      <li>
+        <a href="https://github.com/GalMarkelj" target="blank">
+          <span class="fab fa-github-square f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Github</span>
         </a>
       </li>
-      <li class="footer-list__item">
+      <li>
         <a href="galmarkelj@envoo.net">
-          <span class="fas fa-envelope" class="footer-list-item__link" aria-hidden="true"></span>
+          <span class="fas fa-envelope f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Email</span>
         </a>
       </li>
     </ul>
-    <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
+    <p class="gutter-top--m f--s">&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</p>
+
+    <a href="#topOfThePage" class="scrollTopIcon pos--abs gutter-bottom--s gutter-right--s">
+      <span class="fa-solid fa-circle-chevron-up f--xxl c--dkblue trans--fast"></span>
+    </a>
+
   </footer>
 
-  <script src="/js/handleClicks.js"></script>
+  <script src="assets/app.js"></script>
 
 </body>
 </html>

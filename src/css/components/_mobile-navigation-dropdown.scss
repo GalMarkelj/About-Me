@@ -1,0 +1,12 @@
+.mobile-nav {
+  z-index: 999;
+  position: fixed;
+  bottom: 100%;
+}
+.mobile-nav.active--navigation { bottom: 0 !important;}
+.mobile-nav-footer {
+  bottom: 0;
+  width: 100%;
+}
+#close-icon:hover { color: $hotmag; }
+.mobile-nav [class*="fa-"]:hover { color: $hotmag;}
