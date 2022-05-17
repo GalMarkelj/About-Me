@@ -1,0 +1,31 @@
+{
+  "name": "about-me",
+  "version": "1.0.0",
+  "description": "I'm building a application to improve my web development skills in my own time.",
+  "scripts": {
+    "start": "node ./etc/build.js",
+    "build": "NODE_ENV=production node ./etc/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GalMarkelj/About-Me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GalMarkelj/About-Me/issues"
+  },
+  "homepage": "https://github.com/GalMarkelj/About-Me#readme",
+  "dependencies": {
+    "@fal-works/esbuild-plugin-global-externals": "^2.1.2",
+    "autoprefixer": "^10.4.7",
+    "chalk": "^4.1.2",
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.14.38",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "postcss": "^8.4.13",
+    "postcss-csso": "^6.0.0",
+    "sass": "^1.51.0"
+  }
+}

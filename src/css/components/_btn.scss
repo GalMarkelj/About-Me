@@ -1,0 +1,27 @@
+.btn {
+  padding: .5rem;
+  border-radius: 5px;
+  border: 0;
+
+  &.btn--mag {
+    background-color: $magenta;
+    color: $white;
+
+    &:hover { background-color: $hotmag; }
+  }
+}
+
+.dropdown-btn {
+  font-weight: 700;
+  color: $aqua;
+  transition: color 150ms ease-in;
+
+  &:hover { color: $magenta; }
+  &:active { color: $hotmag; }
+  span { pointer-events: none; }
+  [class*="fa-"] {
+    margin-left: 5px;
+    transition: transform .5s ease-in-out;
+  }
+  [class *= "active--dropdown"] & [class*="fa-"] { transform: rotate(180deg);  }
+}

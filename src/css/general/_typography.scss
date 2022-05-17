@@ -1,0 +1,107 @@
+$default_font_family: system-ui, sans-serif !default;
+$default_font_size: (mobile: 14, tablet: 15, desktop: 16) !default;
+$font_h1: (mobile: 24, tablet: 32, desktop: 34) !default;
+$font_h2: (mobile: 20, tablet: 24, desktop: 24) !default;
+$font_h3: (mobile: 18, tablet: 20, desktop: 20) !default;
+$font_xs: (mobile: 10, tablet: 11, desktop: 12) !default;
+$font_s: (mobile: 12, tablet: 12, desktop: 14) !default;
+$font_m: (mobile: 14, tablet: 15, desktop: 16) !default;
+$font_l: (mobile: 16, tablet: 18, desktop: 18) !default;
+$font_xl: (mobile: 18, tablet: 20, desktop: 22) !default;
+$default_line_height: 1.5 !default;
+$tx_color: #f7f8fa;
+$tx_color_dark: #171321;
+$dkblue: #0d314b;
+$plum: #4b0d49;
+$hotmag: #ff17e4;
+$magenta: #e310cb;
+$aqua: #86fbfb;
+$white: #f7f8fa;
+
+// Font sizes
+html { font-size: #{map-get($default_font_size, mobile)}px; }
+.h1, h1 { font-size: rem($font_h1); }
+.h2, h2 { font-size: rem($font_h2); }
+.h3, h3 { font-size: rem($font_h3); }
+.h4, h4 { font-size: inherit; }
+.f--xs { font-size: rem($font_xs); }
+.f--s { font-size: rem($font_s); }
+.f--m { font-size: rem($font_m); }
+.f--l { font-size: rem($font_l); }
+.f--xl { font-size: rem($font_xl); }
+.f--xxl { font-size: rem($font_h1); }
+@include breakpoint(tablet) {
+  html { font-size: #{map-get($default_font_size, tablet)}px; }
+  .h1, h1 { font-size: rem($font_h1, tablet); }
+  .h2, h2 { font-size: rem($font_h2, tablet); }
+  .h3, h3 { font-size: rem($font_h3, tablet); }
+  .f--xs { font-size: rem($font_xs, tablet); }
+  .f--s { font-size: rem($font_s, tablet); }
+  .f--m { font-size: rem($font_m, tablet); }
+  .f--l { font-size: rem($font_l, tablet); }
+  .f--xl { font-size: rem($font_xl, tablet); }
+  .f--xxl { font-size: rem($font_h1, tablet); }
+}
+@include breakpoint(desktop) {
+  html { font-size: #{map-get($default_font_size, desktop)}px; }
+  .h1, h1 { font-size: rem($font_h1, desktop); }
+  .h2, h2 { font-size: rem($font_h2, desktop); }
+  .h3, h3 { font-size: rem($font_h3, desktop); }
+  .f--xs { font-size: rem($font_xs, desktop); }
+  .f--s { font-size: rem($font_s, desktop); }
+  .f--m { font-size: rem($font_m, desktop); }
+  .f--l { font-size: rem($font_l, desktop); }
+  .f--xl { font-size: rem($font_xl, desktop); }
+  .f--xxl { font-size: rem($font_h1, desktop); }
+}
+
+body {
+  color: $white;
+  font-family: $myFont-sans;
+  font-size: $myFont-m;
+}
+
+
+a { color: $magenta; }
+a:hover {
+  text-decoration: none;
+  color: $hotmag;
+}
+
+.f--bold, strong, b { font-weight: 700; }
+.f--normal {
+  font-weight: normal;
+  font-style: normal;
+}
+
+// font family
+.f--primary { font-family: $myFont-mono; }
+.f--secondary { font-family: $myFont-sans; }
+
+.t--left { text-align: left; }
+.t--right { text-align: right; }
+.t--center { text-align: center; }
+
+.t--wrap { white-space: normal; word-wrap: break-word; }
+.t--nowrap { white-space: nowrap; }
+.t--uppercase { text-transform: uppercase; }
+.t--lowercase { text-transform: lowercase; }
+.t--capitalize { text-transform: capitalize; }
+.t--capitalize-first::first-letter { text-transform: capitalize; }
+.t--normal { text-transform: none; text-decoration: none; }
+.t--no-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c--default { color: $tx_color; }
+.c--dark { color: $tx_color_dark;}
+.c--hotmag { color: $hotmag; }
+.c--magenta { color: $magenta; }
+.c--plum { color: $plum; }
+.c--aqua { color: $aqua; }
+.c--dkblue { color: $dkblue; }
+
+.lh--1 { line-height: 1; }
+.lh--default { line-height: $default_line_height; }

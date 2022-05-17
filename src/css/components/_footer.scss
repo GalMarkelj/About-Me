@@ -1,0 +1,13 @@
+#footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#footer ul{ gap: 3rem; }
+
+@media (max-width: 786px) {
+  #footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  #footer ul { gap: 2rem; }
+}

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="topOfThePage">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <title>Projects</title>
@@ -13,217 +13,316 @@
 
 <body id="projects-page">
 
-  <header id="header">
-    <nav class="header-nav">
-      <ul class="header-nav__list">
-        <li class="header-nav-list__item">
-          <h1>
-            <a href="index.html" class="header-nav-list-item__link">
-              <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
-              <span>Klavdij - Gal Markelj</span>
-            </a>
-          </h1>
-        </li>
-        <li class="header-nav-list__item"><a class="header-nav-list-item__link"
-                href="projects.html">Projects</a></li>
-        <li class="header-nav-list__item">
-          <a class="header-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
-            <span class="fa-brands fa-github" aria-hidden="true"></span>
-            <span class="sr-only">Github</span>
+  <header id="header" class="container pad-side--s">
+    <nav>
+      <ul class="f--primary">
+        <li class="header-list__item d--block f--secondary t--center">
+          <a href="index.html" class="t--normal c--default">
+            <img src="./images/logos/KGM_1_outline.svg" alt="Page-logo" class="page-logo">
           </a>
         </li>
-        <li class="header-nav-list__item"><a class="header-nav-list-item__link btn btn--mag" href="resume.html">Resume</a>
+        <li class="header-list__item gutter-right--l"><a class="t--normal c--default f--xl trans--fast" href="projects.html">Projects</a></li>
+        <li class="header-list__item gutter-right--l"><a class="t--normal c--default f--xl trans--fast" href="resume.html">Resume</a>
+        <li class="header-list__item">
+          <a class="t--normal c--default trans--default" href="https://github.com/GalMarkelj" target="blank">
+            <span class="f--xl">Github</span>
+            <span class="fa-brands fa-github c--aqua f--xl gutter-left--xs" aria-hidden="true"></span>
+          </a>
         </li>
-        <li class="header-nav-list__item">
-          <span class="fa-solid fa-bars js--click" id="open-icon" data-action="toggleNavigation"></span>
+        </li>
+        <li class="header-list__item">
+          <span class="fa-solid fa-bars js--click c--aqua h1" id="open-icon" data-action="toggleNavigation"></span>
         </li>
       </ul>
     </nav>
   </header>
 
-  <div class="mobile-navigation-dropdown" id="mobile-main-nav">
-    <div class="mobile-navigation__header">
-      <h2>
-        <a href="index.html" class="header-nav-list-item__link">
-          <span class="fa-solid fa-user-astronaut" aria-hidden="true"></span>
-          <span>Klavdij - Gal Markelj</span>
+
+  <div class="mobile-nav trans--slow bc-dark--night width--100p height--100p">
+    <div class="pad--m flex flex--center flex--middle">
+      <h2 class="f--secondary gutter-right--auto">
+        <a href="index.html" class="t--normal c--default">
+          <img src="./images/logos/KGM_1_outline.svg" alt="Page-logo" class="page-logo">
         </a>
       </h2>
-      <span class="fa-solid fa-circle-xmark js--click" id="close-icon" data-action="toggleNavigation"></span>
+      <span class="fa-solid fa-circle-xmark js--click c--aqua h1" id="close-icon" data-action="toggleNavigation"></span>
     </div>
-    <nav class="mobile-navigation">
-      <ul class="mobile-nav__list">
-        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link" href="projects.html">Projects</a></li>
-        <li class="mobile-nav-list__item">
-          <a class="mobile-nav-list-item__link" href="https://github.com/GalMarkelj" target="blank">
-            Github
-            <span class="fa-brands fa-github"></span>
-          </a>
+
+    <div class="border-line"></div>
+
+    <nav class="gutter-top--m gutter-left--m">
+      <ul class="d--list-item f--xl">
+        <li class="gutter-bottom--m">
+          <a class="c--default t--normal" href="projects.html">Projects</a>
         </li>
-        <li class="mobile-nav-list__item"><a class="mobile-nav-list-item__link btn btn--mag" href="resume.html">Resume</a>
+        <li class="gutter-bottom--m">
+          <a class="c--default t--normal" href="resume.html">Resume</a>
+        </li>
+        <li">
+          <a class="c--default t--normal" href="https://github.com/GalMarkelj" target="blank">
+            Github
+            <span class="fa-brands fa-github c--aqua"></span>
+          </a>
         </li>
       </ul>
     </nav>
-    <div class="mobile-navigation-footer">
-      <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
-      <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
+
+    <div class="mobile-nav-footer t--center pos--abs">
+      <h2 class="gutter-bottom--s gutter-right--auto f--secondary h3">Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
+      <p class="gutter-bottom--m f--s">&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</p>
     </div>
   </div>
 
-  <div class="page-title bottom-border max-width-middle padding-side">
-    <h2>Projects</h2>
+  <div class="bottom-border container pad-side--s f--primary gutter-top--l">
+    <h2 class="gutter-bottom--xxs h1">Projects</h2>
   </div>
-
-  <section id="projects" class="padding-side">
-    <div class="project-review max-width-middle">
+<!-- in this section width was set to 100% -->
+  <section id="projectsID" class="pad-side--s gutter-top--m">
+    <div class="container">
 
       <div class="flex flex--apart flex--middle">
-        <h3 id="project__name">Beauty - glow</h3>
-        <div class="project__btns  flex flex--apart">
-          <span id="project__back-btn" class="fa-solid fa-circle-arrow-left js--click" data-action="projectSwap"></span>
-          <span id="project__next-btn" class="fa-solid fa-circle-arrow-right js--click"
-            data-action="projectSwap"></span>
+        <h3 id="project__name" class="h2">Authentication app</h3>
+        <div class="project__btns trans--fast flex flex--apart gutter-left--auto gutter-right--s">
+          <span data-sliderBtn="slide-backwards" data-action="projectSlider" id="project__back-btn" class="fa-solid fa-circle-arrow-left js--click pad--s gutter-right--s c--aqua f--xxl" ></span>
+          <span data-sliderBtn="slide-forward" data-action="projectSlider" id="project__next-btn" class="fa-solid fa-circle-arrow-right js--click pad--s c--aqua f--xxl"
+            ></span>
         </div>
       </div>
 
-      <div class="project active--project" data-project="Beauty - glow">
+      <div class="slideru trans--default">
+        <div class="project flex flex--center width--100p trans--slow pos--abs active--project" data-project="Authentication app">
+          <div class="project__card f--m pad-side--s">
+            <div class="pos--rel grid-item--1">
+              <img src="/images/projects/authentication-app/index-page.JPG" alt="authentication-app - Index welcome page" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Welcome page</span>
+            </div>
+            <div class="pos--rel grid-item--2">
+              <img src="/images/projects/authentication-app/user-interface.JPG" alt="authentication-app - user-interface" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">User interface - after login</span>
+            </div>
+            <div class="pos--rel grid-item--3">
+              <img src="/images/projects/authentication-app/register-interface.JPG" alt="authentication-app - register-interface" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Register-interface</span>
+            </div>
+            <div class="pos--rel grid-item--4">
+              <img src="/images/projects/authentication-app/admin-interface.JPG" alt="authentication-app - admin-interface" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Admin privileges</span>
+            </div>
 
-        <div class="project__item pos--rel project__item--1">
-          <img src="/images/beauty-glow/logo.JPG" alt="beauty-glow-logo">
-        </div>
-        <div class="project__item pos--rel project__item--2">
-          <img src="/images/beauty-glow/mobile-version-main-page.JPG" alt="beauty glow mobile main page">
-          <span>Mobile main page reviw</span>
-        </div>
-        <div class="project__item pos--rel project__item--3">
-          <img src="/images/beauty-glow/main-page-crop.JPG" alt="beauty-glow part of the main page">
-          <span>Part of the main page</span>
-        </div>
-        <div class="project__item pos--rel project__item--4">
-          <img src="/images/beauty-glow/programs-page.JPG" alt="beauty-glow part of the programs-page">
-          <span>Part of the programs page</span>
-        </div>
-
-        <div class="project__description">
-          <div class="flex flex--middle project__description-btn js--click" data-action="project-dropdown">
-            <h4>Project description</h4>
-            <span class="fa-solid fa-angle-down description-btn__icon"></span>
+            <div class="project__description trans--default">
+              <div class="flex flex--middle project__description-btn js--click" data-action="project-dropdown">
+                <h4 class="no--events f--l">Project description</h4>
+                <span class="fa-solid fa-angle-down trans--deafult c--aqua no--events gutter-left--xs trans--default f--l"></span>
+              </div>
+              <div class="project__description-wrapper pos--abs trans--default gutter-top--s f--m">
+                <h5 class="f--m">Description</h5>
+                <p class="f--s gutter-top--xs">With this project I made my first interaction with the back-end, meaning, I create a simple application that interacts with the database trough REST API. I used server-side JavaScript run-time environment called NodeJs with Express framework. Trough user prespective you are able to register, login and then insert your "personal" information and later if you like also update them. With that said, those are all the CRUID operations. I create a local session soo that you can stay logged in even if you refresh the browser or go to another page, but in this case meaning of that session is that if you are logged in you are not able to visit pages login and register.</p>
+                <h6 class="f--m  gutter-top--s">Setup</h6>
+                <p class="f--s gutter-top--xs">You can setup this application locally with instructions I wrote <a href="https://github.com/GalMarkelj/authentication-app" class="c--mag">HERE</a></p>
+                <h6 class="f--m gutter-top--s">Registration interface</h6>
+                <p class="f--s gutter-top--xs">At registration I'm using express-validator libary ( to check if username has at least 3 characters, if it's a valid email, if the two inserted passwords match and have at least 8 characters ) and for password hashing usgin bcrypt libary.</p>
+                <h6 class="f--m gutter-top--s">Login interface</h6>
+                <p class="f--s  gutter-top--xs">When logging in I'm using passport libary, first for validating login data with user data from the database (cheching if user exists with that username and with bcrypt libary comparing password form the database and inserted password) and if that goes trough, create a local session with passport-local.</p>
+                <h6 class="f--m gutter-top--s">Database</h6>
+                <p class="f--s gutter-top--xs">I'm using SQLite database on this project and Knex ORM to communicate with the database. In the database we have two entitys connected with foreign key. Main entity is the "User" where we store his username, email and hashed password ( When registering it makes sure that username and email are unique ). Child entity "User_data" stores Users "personal" information.</p>
+                <h6 class="f--m gutter-top--s">Content</h6>
+                <p class="f--s gutter-top--xs">To display the content form the database I'm using EJS view engien.</p>
+                <h6 class="f--m gutter-top--s">Error handling</h6>
+                <p class="f--s gutter-top--xs">If something goes wrong while registering or logging in the application makes sure that displays what went wrong soo that the user knows that to do. If something goes wrong in the back every error is displayed in the console.</p>
+                <h6 class="f--m gutter-top--s">Admin privileges</h6>
+                <p class="f--s gutter-top--xs">I create a separate user called Admin, who has privileges to see all registered users and also delete them by their ID from the database.</p>
+                <h6 class="f--m gutter-top--s">All the dependencies : </h6>
+                <ul>
+                  <li class="gutter-top--xs f--s">Express - a minimal and flexible Node. js web application framework that provides a robust set of features for web and mobile applications.</li>
+                  <li class="gutter-top--xs f--s">Express-validator - an Express middleware library that you can incorporate in your apps for server-side data validation.</li>
+                  <li class="gutter-top--xs f--s">Express-flash - an extension of connect-flash with the ability to define a flash message and render it without redirecting the request.</li>
+                  <li class="gutter-top--xs f--s">Express-session - an HTTP server-side framework used to create and manage a session middleware.</li>
+                  <li class="gutter-top--xs f--s">Express-ejs-layouts - help us create projects that are easier to maintain</li>
+                  <li class="gutter-top--xs f--s">EJS - It is a simple templating engine that lets its user generate HTML with plain javascript.</li>
+                  <li class="gutter-top--xs f--s">Body-parser - extracts the entire body portion of an incoming request stream and exposes it on req.body.</li>
+                  <li class="gutter-top--xs f--s">Chalk - used for styling the format of text and allows us to create our own themes in the node.</li>
+                  <li class="gutter-top--xs f--s">Bcrypt - a JavaScript implementation of the bcrypt password hashing function that allows you to easily create a hash out of a password string.</li>
+                  <li class="gutter-top--xs f--s">Knex - a technique that is used to build queries. It supports various databases like Postgres, MySQL, SQLite, Oracle, and some others as well.</li>
+                  <li class="gutter-top--xs f--s">Method-override - lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.</li>
+                  <li class="gutter-top--xs f--s">Nodemon - a tool that helps develop Node. js based applications by automatically restarting the node application when file changes in the directory are detected.</li>
+                  <li class="gutter-top--xs f--s">Passport - A comprehensive set of strategies support authentication using a username and password, Facebook, Twitter, and more</li>
+                  <li class="gutter-top--xs f--s">Passport-local - this module lets you authenticate using a username and password in your Node. js applications.</li>
+                  <li class="gutter-top--xs f--s">Sqlite3 - database that we are using</li>
+                  <li class="gutter-top--xs f--s">Dotenv -zero-dependency module that loads environment variables from a . env file into process. env .</li>
+                </ul>
+                <h6 class="f--m gutter-top--s">Overall</h6>
+                <p class="f--s gutter-top--xs">From a visual prespective I can't even say that it looks good, but I think that it is a great project if you want to  to know how the back-end works as every good front-end developer should know. My plan in the future is to upgrade my knowledge by using JWT and also build larger application that communicates with the database and its also eye friendly.</p>
+              </div>
+            </div>
           </div>
-          <div class="project__description-wrapper">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ut in non explicabo
-              laboriosam nesciunt officia maiores, possimus debitis accusamus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto fugit similique sit
-              natus
-              dignissimos aperiam odio necessitatibus dolorum deleniti.</p>
+        </div>
+
+        <div class="project flex flex--center width--100p trans--slow pos--abs" data-project="Beauty - glow">
+          <div class="project__card f--m pad-side--s">
+            <div class="pos--rel grid-item--1">
+              <img src="/images/projects/beauty-glow/logo.JPG" alt="beauty-glow - logo" class="grid-item__img">
+            </div>
+            <div class="pos--rel grid-item--2">
+              <img src="/images/projects/beauty-glow/mobile-version-main-page.JPG" alt="beauty glow mobile main page" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Mobile main page reviw</span>
+            </div>
+            <div class="pos--rel grid-item--3">
+              <img src="/images/projects/beauty-glow/results.JPG" alt="beauty-glow part of the main page" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Customer results - custom shortcode</span>
+            </div>
+            <div class="pos--rel grid-item--4">
+              <img src="/images/projects/beauty-glow/programs-page.JPG" alt="beauty-glow part of the programs-page" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Part of the programs page</span>
+            </div>
+
+            <div class="project__description trans--default">
+              <div class="flex flex--middle project__description-btn js--click" data-action="project-dropdown">
+                <h4 class="no--events f--l">Project description</h4>
+                <span class="fa-solid fa-angle-down description-btn__icon c--aqua no--events gutter-left--xs trans--default f--l"></span>
+              </div>
+              <div class="project__description-wrapper pos--abs trans--default gutter-top--s f--m">
+                <h6 class="f--m gutter-top--s">Description</h6>
+                <p class="f--s gutter-top--xs">When me and my college Luka Štiglic started practical education we were given an assignment to build our first legit website for a customer. First we build the website with raw HTML, CSS and JavaScript as result to get to know better with those languages. Then we build it in Wordpress with WPBakery and Istart theme from anpsthemes. Meaning of that website is that a customer can promotes herself by showing what her business is all about and what it offers.</p>
+                <h6 class="f--m gutter-top--s">Development</h6>
+                <p class="f--s gutter-top--xs">Most of the content is inserted with Wordpress elements, but when we talk about stylesheet, we set some themes intergrated settings, but mostly all of the stylesheet is custom.</p>
+                <h6 class="f--m gutter-top--s">Plugins</h6>
+                <p class="f--s gutter-top--xs">The plugins we used :</p>
+                <ul>
+                  <li class="f--s gutter-top--xs">Anps Theme plugin</li>
+                  <li class="f--s gutter-top--xs">Contact Form 7 - Just another contact form plugin. Simple but flexible.</li>
+                  <li class="f--s gutter-top--xs">Envato Market - WordPress Theme & Plugin management for the Envato Market.</li>
+                  <li class="f--s gutter-top--xs">Newsletter - Newsletter is a cool plugin to create your own subscriber list, to send newsletters, to build your business. Before update give a look to this page to know what's changed.</li>
+                  <li class="f--s gutter-top--xs">Safe SVG - Allows SVG uploads into WordPress and sanitizes the SVG before saving it</li>
+                  <li class="f--s gutter-top--xs">Slider Revolution - Premium responsive slider</li>
+                  <li class="f--s gutter-top--xs">Smash Balloon Instagram Feed - Display beautifully clean, customizable, and responsive Instagram feeds.</li>
+                  <li class="f--s gutter-top--xs">Visual Portfolio, Posts & Image Gallery - Modern gallery and portfolio plugin with advanced layouts editor. Clean and powerful gallery styles with enormous settings in the Gutenberg block.</li>
+                  <li class="f--s gutter-top--xs">WP Responsive Recent Post Slider/Carousel - Add and display Responsive WordPresss Recent Post Slider and Carousel on your website with 4 designs (Slider) and 1 designs (Carousel) using a shortcode. Also added Gutenberg block support.</li>
+                  <li class="f--s gutter-top--xs">WPBakery Page Builder - Drag and drop page builder for WordPress. Take full control over your WordPress site, build any layout you can imagine – no programming knowledge required.</li>
+                  <li class="f--s gutter-top--xs">Yoast SEO - The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more.</li>
+                </ul>
+                <p class="f--s gutter-top--xs">For our requirements these plugins are okey but not exactly what we need. To get what we need we would need to buy premium version of that plugin, so that this did not happen we used those plugins and hardcode them.</p>
+                <h6 class="f--m gutter-top--s">Shortcode</h6>
+                <p class="f--s gutter-top--xs">For some things that we had to build, plugin don't exist so we had to create a custom shortcode. The good example is the slider to display customer results. You can see how it looks in the top right picutre above. First I wrote raw static markup, but if the customer wanted to change some value, she would had to change it in the markup, so to avoid that I build a custom shortcode. All that customer had to do is to insert values in Wordpress elemetn that I created and the shortcode did the rest. I had skeleton markup written in PHP and the picture and values next to it are all going dynamically from Wordpress element into the markup by a customer.</p>
+                <h6 class="f--m gutter-top--s">Overall</h6>
+                <p class="f--s gutter-top--xs">With this project I got some knowledge how to set up Wordpress on Linux, build websites with Wordpress, using its plugins and modifying them and building custom shortcodes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project flex flex--center width--100p trans--slow pos--abs" data-project="Application - form">
+          <div class="project__card f--m pad-side--s">
+            <div class="pos--rel grid-item--1">
+              <img src="/images/projects/application-form/first-visual-interface.JPG" alt="application-form - first visual contact" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">First visual overview</span>
+            </div>
+            <div class="pos--rel grid-item--2">
+              <img src="/images/projects/application-form/mobile-first-visaul-interface.JPG" alt="application-form - mobile view fulfilled form" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Mobile view fulfilled form</span>
+            </div>
+            <div class="pos--rel grid-item--3">
+              <img src="/images/projects/application-form/option1.JPG" alt="application-form - first selected option" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Application-form - first selected option</span>
+            </div>
+            <div class="pos--rel grid-item--4">
+              <img src="/images/projects/application-form/option2.JPG" alt="Application-form - second selected option" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Application-form - second selected option</span>
+            </div>
+
+            <div class="project__description trans--default">
+              <div class="flex flex--middle project__description-btn js--click" data-action="project-dropdown">
+                <h4 class="no--events f--l">Project description</h4>
+                <span class="fa-solid fa-angle-down c--aqua no--events gutter-left--xs trans--default f--l"></span>
+              </div>
+              <div class="project__description-wrapper pos--abs trans--default gutter-top--s f--m">
+                <h6 class="f--m gutter-top--s">Description</h6>
+                <p class="f--s gutter-top--xs">The very first day when my practical education started, I met my mentor and I got an assignment from him to let him know where my knowledge about programming lies. He wanted me to create a simple form that you see above. Meaning of that form is that user can register himself for the driving exam. You insert your name, surname and then you have an option to select : </p>
+                <ul>
+                  <li>if you have already taken the exam, if soo, you write what went wrong the first time</li>
+                  <li>If you have not taken the exem before, you can select which category are you applaying for.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project flex flex--center width--100p trans--slow pos--abs" data-project="KGM ~ Parts">
+          <div class="project__card f--m pad-side--s">
+            <div class="pos--rel grid-item--1">
+              <img src="/images/projects/KGM - Parts/logo.JPG" alt="kgm-parts logo" class="grid-item__img">
+            </div>
+            <div class="pos--rel grid-item--2">
+              <img src="/images/projects/KGM - Parts/mobile view.JPG" alt="kgm-parts mobile main page" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Mobile main page reviw</span>
+            </div>
+            <div class="pos--rel grid-item--3">
+              <img src="/images/projects/KGM - Parts/part of the page.JPG" alt="kgm-parts part of the main page" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Part of the main page</span>
+            </div>
+            <div class="pos--rel grid-item--4">
+              <img src="/images/projects/KGM - Parts/contact page.JPG" alt="kgm-parts part of the contact-page" class="grid-item__img">
+              <span class="grid-item__title width--100p pos--abs f--primary pad--s">Contact page</span>
+            </div>
+
+            <div class="project__description trans--default">
+              <div class="flex flex--middle project__description-btn js--click" data-action="project-dropdown">
+                <h4 class="no--events f--l">Project description</h4>
+                <span class="fa-solid fa-angle-down c--aqua no--events gutter-left--xs trans--default f--l"></span>
+              </div>
+              <div class="project__description-wrapper pos--abs trans--default gutter-top--s f--m">
+                <h6 class="f--m gutter-top--s">Description</h6>
+                <p class="f--s gutter-top--xs">In order for my feature job I had to build some "website" that lets them know where my knowledge lies. Before I started looking for a company for my practical education I build a website that you see above to let them know what am I able to do and to not come empty handed on a job interview.</p>
+                <p class="f--s gutter-top--xs">Meaning of this website was to learn basics of HTML, CSS and JavaScript, so I made imaginary car parts store.</p>
+                <p class="f--s gutter-top--xs">It has a news slider and more other news, what products it offers, listed sponsors at the bottom, contact-page with specail RGB animated background around the map and later I made special page where you could insert your car VIN number and it would return you what car that is and his specifications.</p>
+                <p>In order to achieve that I wrote some JavaScript using jQuerry libary and ajax to load data in the background and display it on the screen. I also wrote to a company called VINCARIO where they gave access to the car specifications database where I could get it with the special key they gave me so they could keep track on how many requests I'm making because it was limited.</p>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
-
-      <div class="project" data-project="KGM ~ Parts">
-
-        <div class="project__item pos--rel project__item--1">
-          <img src="/images/KGM - Parts/logo.JPG" alt="kgm-parts logo">
-        </div>
-        <div class="project__item pos--rel project__item--2">
-          <img src="/images/KGM - Parts/mobile view.JPG" alt="kgm-parts mobile main page">
-          <span>Mobile main page reviw</span>
-        </div>
-        <div class="project__item pos--rel project__item--3">
-          <img src="/images/KGM - Parts/part of the page.JPG" alt="kgm-parts part of the main page">
-          <span>Part of the main page</span>
-        </div>
-        <div class="project__item pos--rel project__item--4">
-          <img src="/images/KGM - Parts/contact page.JPG" alt="kgm-parts part of the contact-page">
-          <span>Contact page</span>
-        </div>
-
-        <div class="project__description">
-          <div class="flex flex--middle project__description-btn js--click" data-action="project-dropdown">
-            <h4>Project description</h4>
-            <span class="fa-solid fa-angle-down"></span>
-          </div>
-          <div class="project__description-wrapper">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ut in non explicabo
-              laboriosam nesciunt officia maiores, possimus debitis accusamus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto fugit similique sit
-              natus
-              dignissimos aperiam odio necessitatibus dolorum deleniti.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="project" data-project="test">
-
-        <div class="project__item pos--rel project__item--1">
-          <img src="/images/TEST/test1.jpg" alt="kgm-parts logo">
-        </div>
-        <div class="project__item pos--rel project__item--2">
-          <img src="/images/TEST/test2.jpeg" alt="kgm-parts mobile main page">
-          <span>Mobile main page reviw</span>
-        </div>
-        <div class="project__item pos--rel project__item--3">
-          <img src="/images/TEST/test3.jpg" alt="kgm-parts part of the main page">
-          <span>Part of the main page</span>
-        </div>
-        <div class="project__item pos--rel project__item--4">
-          <img src="/images/TEST/test4.jpg" alt="kgm-parts part of the contact-page">
-          <span>Contact page</span>
-        </div>
-
-        <div class="project__description">
-          <div class="flex flex--middle project__description-btn js--click" data-action="project-dropdown">
-            <h4>Project description</h4>
-            <span class="fa-solid fa-angle-down"></span>
-          </div>
-          <div class="project__description-wrapper">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ut in non explicabo
-              laboriosam nesciunt officia maiores, possimus debitis accusamus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto fugit similique sit
-              natus
-              dignissimos aperiam odio necessitatibus dolorum deleniti.</p>
-          </div>
-        </div>
-
-      </div>
-
     </div>
   </section>
 
-  <div class="border-line"></div>
+  <div class="border-line gutter-top--l"></div>
 
-  <footer id="footer">
-    <h2>Klavdij - Gal Markelj &middot; Junior front-end developer</h2>
-    <ul class="footer__list">
-      <li class="footer-list__item">
-        <a href="https://www.instagram.com/gal_markelj/" class="footer-list-item__link" target="blank">
-          <span class="fa-brands fa-instagram" aria-hidden="true"></span>
+  <footer id="footer" class="trans--default t--center pad-side--s pos--rel">
+    <h2 class="h1">Klavdij - Gal Markelj</h2>
+    <ul class="gutter-top--m">
+      <li>
+        <a href="https://www.instagram.com/gal_markelj/" target="blank">
+          <span class="fa-brands fa-instagram f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Instagram</span>
         </a>
       </li>
-      <li class="footer-list__item">
-        <a href="https://discord.com/users/247079542399827968" class="footer-list-item__link" target="blank">
-          <span class="fa-brands fa-discord" aria-hidden="true"></span>
+      <li>
+        <a href="https://discord.com/users/247079542399827968" target="blank">
+          <span class="fa-brands fa-discord f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Discrod</span>
         </a>
       </li>
-      <li class="footer-list__item">
-        <a href="https://github.com/GalMarkelj" class="footer-list-item__link" target="blank">
-          <span class="fab fa-github-square" aria-hidden="true"></span>
+      <li>
+        <a href="https://github.com/GalMarkelj" target="blank">
+          <span class="fab fa-github-square f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Github</span>
         </a>
       </li>
-      <li class="footer-list__item">
+      <li>
         <a href="galmarkelj@envoo.net">
-          <span class="fas fa-envelope" class="footer-list-item__link" aria-hidden="true"></span>
+          <span class="fas fa-envelope f--xxl" aria-hidden="true"></span>
           <span class="sr-only">Email</span>
         </a>
       </li>
     </ul>
-    <p class="copyright"><small>&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</small></p>
+    <p class="gutter-top--m f--s">&copy; 2022 Klavdij - Gal Markelj. All rights reserved.</p>
+
+    <a href="#topOfThePage" class="scrollTopIcon pos--abs gutter-bottom--s gutter-right--s">
+      <span class="fa-solid fa-circle-chevron-up f--xxl c--dkblue trans--fast"></span>
+    </a>
+
   </footer>
-  <script src="/js/handleClicks.js"></script>
+
+  <script src="assets/app.js"></script>
 </body>
 
 </html>
